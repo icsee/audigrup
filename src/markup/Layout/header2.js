@@ -48,13 +48,13 @@ class Header2 extends Component {
                                 <div className="dlab-topbar-left">
                                     <ul>
                                         <li><i className="flaticon-phone-call m-r5"></i> 3112411218</li>
-                                        <li><i className="ti-location-pin m-r5"></i> Bogotá Colombia</li>
+                                        <li><i className="flaticon-phone-call m-r5"></i> 3124311678</li>
+                                        <li><i className="ti-location-pin m-r5"></i> Cr 10 # 23-06 of 401 Bogotá Colombia</li>
                                     </ul>
                                 </div>
                                 <div className="dlab-topbar-right">
                                     <ul>
-                                        <li><i className="ti-skype m-r5"></i> Agency.software</li>
-                                        <li><i className="ti-email m-r5"></i> audigrup@audigrup.com.co</li>
+                                       <li><i className="ti-email m-r5"></i> audigrup@audigrup.com.co</li>
                                     </ul>
                                 </div>
                             </div>

@@ -13,6 +13,10 @@ class HeaderMenu extends Component{
 						</ul>
 					</li>
 					<li><Link to={'#'}>Audigrup <i className="fa fa-chevron-down"></i></Link>
+				
+								<ul className="sub-menu">
+									<li><Link to={'./about-1'} className="dez-page">Nosotros</Link></li>
+								</ul>
 						
 					</li>
 					<li><Link to={'#'}>Servicios<i className="fa fa-chevron-down"></i></Link>

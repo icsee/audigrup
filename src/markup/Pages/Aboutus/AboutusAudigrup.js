@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
-import Header from './../../Layout//header2';
-import Footer from './../../Layout/Footer1';
-import PageTitle from './../../Layout/PageTitle';
-import SectionCounter from './../../Element/SectionCounter';
-import TestimonialCarousel from './../../Element/TestimonialCarousel';
-import FormStyle from './../../Element/FormStyle';
+import Header from '../../Layout/header2';
+import Footer from '../../Layout/Footer1';
+import PageTitle from '../../Layout/PageTitle';
+import SectionCounter from '../../Element/SectionCounter';
+import TestimonialCarousel from '../../Element/TestimonialCarousel';
+import FormStyle from '../../Element/FormStyle';
 
 //Images
 import  about9 from './../../../images/about/pic9.jpg';
@@ -27,14 +27,7 @@ class Aboutus1 extends Component {
 					</div>	
                     <div className="content-block">
                         <div className="section-full content-inner-2">
-                            <div className="container">
-                                <div className="section-head text-black text-center">
-                                    <h4 className="text-gray-dark m-b10">About Us</h4>
-                                    <h2 className="box-title m-tb0">We create brand new corporate identities<span className="bg-primary"></span></h2>
-                                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.</p>
-                                </div>
-                            </div>
-                            <div className="container">
+                           <div className="container">
                                 <div className="row ">
                                     <div className="col-lg-5 col-md-4 about-img">
                                         <img src={about9} data-tilt alt="" />

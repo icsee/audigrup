@@ -20,9 +20,8 @@ const counterBlog = [
 	{icon: <i className="ti-mobile m-r10" />, num: '200', title: 'Apps Delivered',},	
 ];
 const counterBlog2 = [
-	{ num: '768',  title: 'Day Of Experience',},	
-	{ num: '128',  title: 'Awards Winning',},	
-	{ num: '654',  title: 'Happy Clients',},		
+	{ num: '5040',  title: 'Dias de experiencia', texto:"Sector real y solidario"},	
+	{ num: '18',  title: 'Clientes felices', texto:"Asesorando y gestionando"},		
 ];
 const counterBlog3 = [
 	{icon: <i className="icon flaticon-bar-chart text-primary" />, num: '4922',  title: 'Completed Projects', num2: '7652',},	
@@ -50,8 +49,8 @@ class ShortCounter extends Component {
                             <div className="container">
                                 <div className="row">
                                     <div className="col-xl-4 col-lg-12  align-self-center " >
-                                        <h5>Who We Are</h5>
-                                        <h2 className="font-weight-700">Leading The Way In Consulting Business For Over 25 Years</h2>
+                                        <h5>Quienes somos</h5>
+                                        <h2 className="font-weight-700">Más de 20 años de experiencia en el sector real y solidario </h2>
                                     </div>
                                     <div className="col-xl-8 col-lg-12 ">
                                         <div className="row">
@@ -156,8 +155,8 @@ function ConsultingBlog(){
 		<>
 			<div className="row m-b30">
 				<div className="col-lg-4 col-md-12 align-self-center" >
-					<h5>Who We Are</h5>
-					<h2 className="font-weight-700">Leading The Way In Consulting Business For Over 25 Years</h2>
+					<h5>Quienes somos</h5>
+					<h2 className="font-weight-700">Más de 20 años de experiencia en el sector real y solidario</h2>
 				</div>
 				<div className="col-lg-8 col-md-12">
 					<div className="row">
@@ -167,7 +166,7 @@ function ConsultingBlog(){
 									<h2 className="counter font-45"><CountUp end={data.num} duration={4}/></h2>
 									<div className="icon-content">
 										<h5 className="font-weight-500">{data.title}</h5>
-										<p className="m-b0 font-14">Take a trivial example, which seds ever undertakes laborious.</p>
+										<p className="m-b0 font-14">{data.texto}</p>
 									</div>
 								</div>
 							</div>

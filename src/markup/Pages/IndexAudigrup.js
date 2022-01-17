@@ -20,10 +20,12 @@ import bg13 from './../../images/background/bg13.jpg';
 import bg3 from './../../images/background/bg3.jpg';
 import revisoriafiscal from './../../images/our-work/revisoria2.jpg';
 import gestioncontable from './../../images/our-work/revisoriafiscal.jpg';
-import Outsourcingcontable from './../../images/our-work/outsorcingcontable.jpg';
+import salud from './../../images/our-work/salud.jpg';
+import audiexterinter from './../../images/our-work/audiexterinter.jpg';
+import quality from './../../images/our-work/quality.jpg';
 import advisor from './../../images/our-work/advisor.jpg';
 import work2 from './../../images/our-work/pic2.jpg';
-import work3 from './../../images/our-work/pic3.jpg';
+import safety from './../../images/our-work/safety.jpg';
 import work4 from './../../images/our-work/pic4.jpg';
 import grid1 from './../../images/blog/grid/pic1.jpg';
 import grid2 from './../../images/blog/grid/pic2.jpg';
@@ -40,15 +42,14 @@ import logo5 from './../../images/client-logo/logo/logo5.jpg';
 
 
 const dlabBox=[
-	{icon: <i className="flaticon-search" />, title:'Revisoría Fiscal', image: revisoriafiscal, resumen:'Nuestros programas de auditoria abarcan areas como Auditoría financiera, control interno, auditoria de sistemas, cumplimiento y gestión' },
-	{icon: <i className="flaticon-money" />, title:'Asesoría tributaria', image: work2,  resumen:'No pierda beneficios tributarios por desconocimiento, nosotros le ayudamos' },
-	{icon: <i className="flaticon-bar-chart" />, title:'Asesoría Gerencial', image: advisor, resumen:'Estamos para ayudarle crecer y generar mayor valor a su negocio' },
-	{icon: <i className="flaticon-pen" />, title:'Outsourcing Contable', image: Outsourcingcontable, resumen:'Pendiente texto'},
-    {icon: <i className="flaticon-accounting" />, title:'Gestión opertativa del área contable', image: gestioncontable, resumen:'Pendiente texto'},
-    {icon: <i className="flaticon-operation" />, title:'Consultoría en calidad y procesos', image: work4, resumen:'Pendiente texto'},
-    {icon: <i className="flaticon-maze" />, title:'Auditoría interna y externa', image: work4, resumen:'Pendiente texto'},
-    {icon: <i className="flaticon-organization" />, title:'Auditoria en salud', image: work4, resumen:'Pendiente texto'},
-    {icon: <i className="flaticon-workers" />, title:'Auditoria y asesoría en SG SST', image: work4, resumen:'Pendiente texto'},
+	{icon: <i className="flaticon-search" />, title:'Revisoría Fiscal', image: revisoriafiscal, resumen:'Órgano de fiscalización de las empresas, que tiene como finalidad verificar el cumplimiento de normas internas y externas, y dictaminar los estados financiero.            ' },
+    {icon: <i className="flaticon-operation" />, title:'Consultoría en calidad y procesos', image: quality, resumen:'Implementamos programas orientados al perfeccionamiento de los procesos, de modo de asegurar la óptima calidad de los productos y servicios ofrecidos.            '},
+	{icon: <i className="flaticon-bar-chart" />, title:'Asesoría Gerencial', image: advisor, resumen:'Orientada a gerentes de empresas, gobiernos locales, presidentes de empresas y directivos corporativos, en sus procesos de planeación y toma de decisiones.                   ' },
+	{icon: <i className="flaticon-accounting" />, title:'Gestión opertativa del área contable, outsourcing contable', image: gestioncontable, resumen:'Optimización de los procesos contables y financieros. Calidad en los reportes emitidos. Oportunidad en la entrega de reportes.'},
+    {icon: <i className="flaticon-money" />, title:'Asesoría tributaria', image: work2,  resumen:'Comprende la implementación de controles y procedimientos necesarios para la adecuada aplicación de las normas tributarias.       ' },
+    {icon: <i className="flaticon-maze" />, title:'Auditoría interna y externa', image: audiexterinter, resumen:'Objetivo analizar y mejorar los controles y el desempeño y se pretende expresar una opinión sobre el estado financiero.                                                      '},
+    {icon: <i className="flaticon-organization" />, title:'Auditoria en salud', image: salud, resumen:'Proceso de evaluación sistemática de la calidad y la gestión de recursos en la atención en salud.                                                                             '},
+    {icon: <i className="flaticon-workers" />, title:'Auditoria y asesoría en SG SST', image: safety, resumen:'Diagnóstico Y Plan Anual De Trabajo SGSST A La Medida De Su Negocio.                                                                                                   '},
 ];
 
 const gridBlog = [
@@ -130,90 +131,36 @@ class IndexAudigrup extends Component {
                                 </div>
                             </div>
                         </div>
-
-                        <div className="section-full facility bg-gray">
-                            <div className="row m-a0">
-                                <div className="col-lg-4 col-md-12 col-sm-12 p-a0">
-                                    <div className="icon-bx-wraper left bg-primary text-white p-a70 dlab-box-icon">
-                                        <div className="icon-lg">
-                                            <div className="icon-cell">
-                                                <div>
-                                                    <span>
-                                                        <i className="ti-check-box"></i>
-                                                        <i className="ti-check-box"></i>
-                                                    </span>
-                                                </div>
+                        <div className="row ">
+                                    <div className="col-lg-7 col-md-8">
+                                        <div className="abuot-box row" >
+                                            <div className="col-lg-4">
+                                                <h2 className="box-title m-tb0">Audigrup Ltda.<span className="bg-primary"></span></h2>
+                                                <h4 className="text-gray-dark">Nuestra experiencia nos hace su mejor opción.</h4>
+                                            </div>
+                                            <div className="col-lg-8">
+                                                <p>El Grupo Auditor y Financiero Integral, fue constituido en mayo de 2008 por los Doctores Javier Rodrigo Jimenez Amaya y Henry Mauricio Puentes Cruz, Contadores Públicos Titulados de profesión, el Grupo profesional que compone AUDIGRUP LTDA cuenta con más de veinte (20) años de experiencia ejerciendo auditoria y Revisoría Fiscal en el Sector Solidario y Comercial.  
+</p>
                                             </div>
                                         </div>
-                                        <div className="icon-content">
-                                            <h4 className="dlab-tilte">Ensure Security</h4>
-                                            <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam rem aperiam eaque</p>
-                                        </div>
+                                    </div>
+                                    <div className="col-lg-5 col-md-4 about-img" >
+                                        <img src={gestioncontable} data-tilt alt="" />
                                     </div>
                                 </div>
-                                <div className="col-lg-4 col-md-12 col-sm-12 p-a0">
-                                    <div className="icon-bx-wraper left p-a70 dlab-box-icon">
-                                        <div className="icon-lg">
-                                            <div className="icon-cell">
-                                                <div>
-                                                    <span>
-                                                        <i className="ti-user"></i>
-                                                        <i className="ti-user"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="icon-content">
-                                            <h4 className="dlab-tilte">expert team</h4>
-                                            <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam rem aperiam eaque</p>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div className="col-lg-4 col-md-12 col-sm-12 p-a0">
-                                    <div className="icon-bx-wraper left bg-primary text-white p-a70 dlab-box-icon">
-                                        <div className="icon-lg">
-                                            <div className="icon-cell">
-                                                <div>
-                                                    <span>
-                                                        <i className="ti-headphone-alt"></i>
-                                                        <i className="ti-headphone-alt"></i>
-                                                    </span>
-                                                </div>
-                                            </div>
-                                        </div>
-                                        <div className="icon-content">
-                                            <h4 className="dlab-tilte">24/7 SUPPORT</h4>
-                                            <p>Perspiciatis unde omnis ist natus error sit voluptatem accusantium loremque tium totam rem aperiam eaque</p>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div className="section-full content-inner bg-img-fix" style={{ backgroundImage: "url(" + bg12 + ")" }}>
                             <div className="container">
                                 <ConsultingBlog />
                             </div>
                         </div>
-                        <div className="section-full content-inner-2 bg-primary bg-img-fix overlay-primary tax-info-chart" style={{ backgroundImage: "url(" + bg3 + ")" }}>
-                            <div className="container">
-                                <div className="row dzseth">
-                                    <div className="col-lg-6 col-md-12 col-sm-12 d-flex mb-4 mb-md-4 mb-lg-0" >
-                                        <div className="chart-box">	
-											<LineChart />
-                                        </div>
-                                    </div>
-                                    <div className="col-lg-6 col-md-12 col-sm-12 dis-tbl d-flex">
-                                        <FormBlog />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         <div className="section-full content-inner-2 bg-img-fix" style={{ backgroundImage: "url(" + bg13 + ")" }}>
                             <div className="container">
                                 <div className="row">
                                     <div className="col-md-12 text-center section-head">
-                                        <h2 className="font-weight-700 m-b0">Our Team</h2>
-                                        <p className="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
+                                        <h2 className="font-weight-700 m-b0">Nuestro equipo</h2>
+                                        <p className="m-b0">Contamos con expertos profesionales especializados en ...</p>
                                     </div>
                                 </div>
                                 <div className="row m-b50">
@@ -240,7 +187,7 @@ class IndexAudigrup extends Component {
                             <div className="container">
                                 <div className="row ">
                                     <div className="col-lg-12 text-center section-head">
-                                        <h2 className="m-b10">We lead the global rankings</h2>
+                                        <h2 className="m-b10">Nuestros clientes</h2>
                                         <h5 className="m-b0 font-weight-300 max-w600 m-auto">Our unmatched quality services are recognized by world's top research &amp; review companies</h5>
                                     </div>
                                 </div>
@@ -251,43 +198,10 @@ class IndexAudigrup extends Component {
 										</div>
 									))}	
                                 </div>
-                                <div className="row">
-                                    <div className="col-md-12 text-center">
-                                        <Link to={'#'} className="site-button button-md">View All Partner</Link>
-                                    </div>
-                                </div>
+                                
                             </div>
                         </div>
-                        <div className="section-full content-inner-2 bg-gray bg-img-fix overlay-primary" style={{ backgroundImage: "url(" + bg1 + ")" }}>
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-md-12 text-center section-head text-white" >
-                                        <h2 className="font-weight-700 text-white m-b0">Our Testimonial</h2>
-                                        <p className="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-md-12">
-										<TestimonialStyle2 />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div className="section-full content-inner bg-img-fix" style={{ backgroundImage: "url(" + bg14 + ")" }}>
-                            <div className="container">
-                                <div className="row">
-                                    <div className="col-md-12 text-center section-head">
-                                        <h2 className="font-weight-700 m-b0">Our Blog</h2>
-                                        <p className="m-b0">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since.</p>
-                                    </div>
-                                </div>
-                                <div className="row">
-                                    <div className="col-md-12">
-										<OurBlogSlider />
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+                        
                         {/* <!-- About Quotes End --> */}
                     </div>
                     {/* <!-- contact area END --> */}

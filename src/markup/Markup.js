@@ -9,7 +9,7 @@ import Index4 from './Pages/Index4';
 import Index5 from './Pages/Index5';
 import Index6 from './Pages/Index6';
 import Index7 from './Pages/Index7';
-import Aboutus1 from './Pages/Aboutus/Aboutus1';
+import Aboutus1 from './Pages/Aboutus/AboutusAudigrup';
 import Aboutus2 from './Pages/Aboutus/Aboutus2';
 import Error403 from './Pages/Error/Error403';
 import Error404 from './Pages/Error/Error404';

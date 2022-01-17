@@ -4,7 +4,7 @@ import Slider from "react-slick";
 
 import Slider5 from './../../images/main-slider/slide5.jpg';
 import Slider4 from './../../images/main-slider/slide4.jpg';
-import SliderAudigrup1 from './../..//images/our-work/workaudigrup.jpg';
+import SliderAudigrup1 from './../..//images/our-work/team.jpg';
 import SliderAudigrup2 from './../..//images/our-work/workaudigrup2.jpg';
 
 function SampleNextArrow(props) {
@@ -81,8 +81,8 @@ class Index3Slider extends Component{
 						<div className="slide-content-box container">
 							<div className="max-w700 text-white ">
 								
-								<h2 className="dz-title">Somos reconocidos como <br/> </h2>
-								<h4 className="sub-title">la mejor opción en calidad,servicio y respaldo integral. </h4>
+								<h2 className="dz-title">Somos reconocidos <br/> </h2>
+								<h4 className="sub-title">como la mejor opción en calidad,servicio y respaldo integral. </h4>
 							</div>
 						</div>
 					</div>
