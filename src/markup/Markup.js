@@ -4,7 +4,7 @@ import ThemeButton from './Element/ThemeButton/ThemeButton';
 
 import Homepage from './Pages/Homepage1';
 import Index2 from './Pages/Index2';
-import Index3 from './Pages/Index3';
+import IndexAudigrup from './Pages/IndexAudigrup';
 import Index4 from './Pages/Index4';
 import Index5 from './Pages/Index5';
 import Index6 from './Pages/Index6';
@@ -68,8 +68,8 @@ class Markup extends Component{
 			<BrowserRouter basename="/react/demo">
                 <div className="page-wraper">
                     <Switch>
-                        <Route path='/' exact component={Index3} />
-                        <Route path='/index-3' exact component={Index3} />
+                        <Route path='/' exact component={IndexAudigrup} />
+                        <Route path='/index-3' exact component={IndexAudigrup} />
                         <Route path='/about-1' exact component={Aboutus1} />
                         <Route path='/about-2' exact component={Aboutus2} />
                         <Route path='/error-403' exact component={Error403} />

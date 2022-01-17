@@ -4,7 +4,8 @@ import Slider from "react-slick";
 
 import Slider5 from './../../images/main-slider/slide5.jpg';
 import Slider4 from './../../images/main-slider/slide4.jpg';
-
+import SliderAudigrup1 from './../..//images/our-work/workaudigrup.jpg';
+import SliderAudigrup2 from './../..//images/our-work/workaudigrup2.jpg';
 
 function SampleNextArrow(props) {
   const { onClick } = props;
@@ -63,25 +64,25 @@ class Index3Slider extends Component{
 			
 			<Slider className="owl-slider owl-carousel owl-theme owl-none" {...settings}>
 				<div className="item slide-item">
-					<div className="slide-item-img"><img src={Slider5} className="w-100" alt=""/></div>
+					<div className="slide-item-img"><img src={SliderAudigrup1} className="w-100" alt=""/></div>
 					<div className="slide-content overlay-primary-dark">
 						<div className="slide-content-box container">
 							<div className="max-w700 text-white ">
-								
-								<h2 className="dz-title">Nuestra firma, <br/>un grupo profesional para su respaldo empresarial </h2>
-								
+							  
+								<h2 className="dz-title">Nuestra firma, <br/> </h2>
+								<h4 className="sub-title">un grupo profesional para su respaldo empresarial</h4>
 							</div>
 						</div>
 					</div>
 				</div>
 				<div className="item slide-item">
-					<div className="slide-item-img"><img src={Slider4} className="w-100" alt=""/></div>
+					<div className="slide-item-img"><img src={SliderAudigrup2} className="w-100" alt=""/></div>
 					<div className="slide-content overlay-primary-dark">
 						<div className="slide-content-box container">
 							<div className="max-w700 text-white ">
 								
-								<h2 className="dz-title">Somos reconocidos como la mejor opción en calidad, <br/>servicio y respaldo integral.  </h2>
-								
+								<h2 className="dz-title">Somos reconocidos como <br/> </h2>
+								<h4 className="sub-title">la mejor opción en calidad,servicio y respaldo integral. </h4>
 							</div>
 						</div>
 					</div>

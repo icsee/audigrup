@@ -1,0 +1,4 @@
+{
+    "appService.defaultWebAppToDeploy": "/subscriptions/5a95903f-a8a5-4cae-8d10-3f9141a32f1c/resourceGroups/appsvc_linux_centralus2/providers/Microsoft.Web/sites/audigrup",
+    "appService.deploySubpath": "."
+}
