@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header2 from '../Layout/header2';
-import Footer2 from '../Layout/footer2';
+import Footer2 from '../Layout/FooterAudigrup';
 import {ConsultingBlog} from './ShortCode/ShortCounter'; 
 import TestimonialStyle2 from './ShortCode/TestimonialStyle2'; 
 import LineChart from './ShortCode/LineChart'; 
@@ -139,8 +139,8 @@ class IndexAudigrup extends Component {
                                                 <h4 className="text-gray-dark">Nuestra experiencia nos hace su mejor opción.</h4>
                                             </div>
                                             <div className="col-lg-8">
-                                                <p>El Grupo Auditor y Financiero Integral, fue constituido en mayo de 2008 por los Doctores Javier Rodrigo Jimenez Amaya y Henry Mauricio Puentes Cruz, Contadores Públicos Titulados de profesión, el Grupo profesional que compone AUDIGRUP LTDA cuenta con más de veinte (20) años de experiencia ejerciendo auditoria y Revisoría Fiscal en el Sector Solidario y Comercial.  
-</p>
+                                                <p>El Grupo Auditor y Financiero Integral, fue constituido en mayo de 2008 por los profesionales expertos en las ciencias contables Javier Rodrigo Jimenez Amaya, Henry Mauricio Puentes Cruz y Wilman Arely Muñoz Bustos, 
+                                                    Contadores Públicos Titulados de profesión, el Grupo profesional que compone AUDIGRUP LTDA cuenta con más de veinte (20) años de experiencia ejerciendo auditoria y Revisoría Fiscal en el Sector Solidario y Comercial.</p>
                                             </div>
                                         </div>
                                     </div>

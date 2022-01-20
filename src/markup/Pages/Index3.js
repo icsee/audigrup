@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
 import Header2 from './../Layout/header2';
-import Footer2 from './../Layout/footer2';
+import Footer2 from './../Layout/footer1';
 import {ConsultingBlog} from './ShortCode/ShortCounter'; 
 import TestimonialStyle2 from './ShortCode/TestimonialStyle2'; 
 import LineChart from './ShortCode/LineChart'; 
