@@ -21,7 +21,7 @@ const counterBlog = [
 ];
 const counterBlog2 = [
 	{ num: '5040',  title: 'Dias de experiencia', texto:"Sector real y solidario"},	
-	{ num: '18',  title: 'Clientes felices', texto:"Asesorando y gestionando"},		
+	{ num: '28',  title: 'Clientes felices', texto:"Asesorando y gestionando"},		
 ];
 const counterBlog3 = [
 	{icon: <i className="icon flaticon-bar-chart text-primary" />, num: '4922',  title: 'Completed Projects', num2: '7652',},	

@@ -10456,13 +10456,15 @@ ul[class*="list-"]{
 [class*="icon-bx-"][class*="border-"] .icon-cell {
     display: table-cell;
     vertical-align: middle;
+    color:#ce201f
 
 }
 .icon-bx-wraper.bx-style-1,
 .icon-bx-wraper.bx-style-2 {
     border-width: 1px;
     border-style: solid;
-    border-color: #ebedf2;
+    color:#ce201f;
+    border-color:#ce201f;
 }
 .icon-bx-wraper.bx-style-2.center [class*="icon-bx-"],
 .icon-bx-wraper.bx-style-2.left [class*="icon-bx-"],

@@ -1,20 +1,22 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
 import Header from '../../Layout/header2';
-import Footer from '../../Layout/Footer1';
+import Footer from '../../Layout/FooterAudigrup';
 import PageTitle from '../../Layout/PageTitle';
-import SectionCounter from '../../Element/SectionCounter';
+import SectionCounter from '../../Element/SectionCounterAudigrup';
 import TestimonialCarousel from '../../Element/TestimonialCarousel';
 import FormStyle from '../../Element/FormStyle';
 
 //Images
-import  about9 from './../../../images/about/pic9.jpg';
+import  about9 from './../../../images/about/ejecutiva.jpg';
 import bg2 from './../../../images/background/bg-map.jpg';
 import services1 from './../../../images/our-services/pic1.jpg';
 import services2 from './../../../images/our-services/pic2.jpg';
+import mision from './../../../images/our-work/mision.jpg';
+import vision from './../../../images/our-work/team.jpg';
 import bg1 from './../../../images/background/bg1.jpg';
 
-import bnr from './../../../images/banner/bnr2.jpg';
+import bnr from './../../../images/our-work/baner2.png';
 
 class Aboutus1 extends Component {
     render() {
@@ -23,7 +25,7 @@ class Aboutus1 extends Component {
                 <Header />
                 <div className="page-content bg-white">
 					<div className="dlab-bnr-inr overlay-primary" style={{ backgroundImage: "url(" + bnr + ")" }}>
-						<PageTitle motherMenu='About Us 1' activeMenu='About Us 1' />
+						<PageTitle motherMenu='Audigrup' />
 					</div>	
                     <div className="content-block">
                         <div className="section-full content-inner-2">
@@ -35,13 +37,14 @@ class Aboutus1 extends Component {
                                     <div className="col-lg-7 col-md-8">
                                         <div className="abuot-box left row m-lr0 ">
                                             <div className="col-lg-4">
-                                                <h2 className="box-title m-tb0">About Us<span className="bg-primary"></span></h2>
-                                                <h4 className="text-gray-dark">We create unique experiences</h4>
+                                                <h2 className="box-title m-tb0">¿Quiénes somos?<span className="bg-primary"></span></h2>
+                                                <h4 className="text-gray-dark">Firma de auditoría integral</h4>
                                             </div>
                                             <div className="col-lg-8">
-                                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak.</p>
-                                                <p>Also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMak.</p>
-                                                <p className="m-b0">Also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages.</p>
+                                                <p>El Grupo Auditor y Financiero Integral, fue constituido en mayo de 2008 por los profesionales expertos en las ciencias contables Javier Rodrigo Jimenez Amaya, Henry Mauricio Puentes Cruz y Wilman Arely Muñoz Bustos, 
+                                                    Contadores Públicos Titulados de profesión, el Grupo profesional que compone AUDIGRUP LTDA cuenta con más de veinte (20) años de experiencia ejerciendo auditoria y Revisoría Fiscal en el Sector Solidario y Comercial.</p>
+                                                
+                                                
                                             </div>
                                         </div>
                                     </div>
@@ -50,26 +53,11 @@ class Aboutus1 extends Component {
                             </div>
                         </div>
 						{ /* Counetr section */ }
-							<SectionCounter />
+						   <SectionCounter /> 	
 						{ /* Counetr section End*/ }
 							<VisionBlog />
 							
-                        {/* <!-- Testimonials --> */}
-                        <div className="section-full content-inner" style={{ backgroundImage: "url(" + bg2 + ")", backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
-                            <div className="container">
-                                <div className="section-head text-center">
-                                    <h2 className="box-title m-tb0">Our Testimonials<span className="bg-primary"></span></h2>
-                                    <p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </p>
-                                </div>
-                                <div className="section-content m-b30 ">
-                                    <TestimonialCarousel />
-                                </div>
-                            </div>
-                        </div>
-                        {/* <!-- Testimonials END --> */}
-                        <div className="section-full overlay-primary-dark bg-img-fix" style={{ backgroundImage: "url(" + bg1 + ")" }}>
-                            <FormStyle />
-                        </div>
+							
                     </div>
                 </div>
                 <Footer />
@@ -83,39 +71,35 @@ function VisionBlog(){
 			<div className="section-ful our-about-info content-inner-1 " style={{ backgroundImage: "url(" + bg2 + ")",backgroundPosition:"center" ,backgroundRepeat:"no-repeat" }}>
 				<div className="container">
 					<div className="section-head text-center">
-						<h2 className="box-title m-tb0">Mission And Vision<span className="bg-primary"></span></h2>
-						<p> Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the </p>
+						<h2 className="box-title m-tb0">Misión y Visión<span className="bg-primary"></span></h2>
+						<p> Nuestra firma, un grupo profesional para su respaldo empresarial. </p>
 					</div>
 					<div className=" row dzseth  m-b30">
 						<div className="col-lg-6 col-md-12 m-b30 about-img ">
-							<img src={services1} data-tilt alt="" />
+							<img src={mision} data-tilt alt="" />
 						</div>
 						<div className="col-lg-6 col-md-12 m-b30 dis-tbl text-justify">
 							<div className="dis-tbl-cell">
-								<h3 className="box-title">Mision<span className="bg-primary"></span></h3>
-								<p className="font-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-								<p className="font-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. </p>
-								<p className="font-16">Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the.</p>
+								<h3 className="box-title">Misión<span className="bg-primary"></span></h3>
+								<p className="font-16">Ofrecer un servicio experto de auditoría y ciencias contables, dirigido a la colectividad empresarial, 
+								con el propósito de acompañamiento, diligencia y generación de ideas para soluciones de respaldo. </p>
+								
 							</div>
 						</div>
 					</div>
 					<div className="row dzseth column-reverse">
 						<div className="col-lg-6 col-md-12 dis-tbl text-justify">
 							<div className="dis-tbl-cell">
-								<h3 className="box-title">Vision<span className="bg-primary"></span></h3>
+								<h3 className="box-title">Visión<span className="bg-primary"></span></h3>
 								<p className="font-16">
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to 	make a type specimen book. 
+									Ser un grupo corporativo, reconocido como la mejor opción, en calidad, servicio y respaldo integral, adoptando herramientas y estándares
+									internacionales generando riqueza en la sociedad mediante unidad empresarial. 
 								</p>
-								<p className="font-16">	
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book.
-								</p>
-								<p className="font-16">
-									Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the	 industry's standard dummy text ever since the.
-								</p>
+							
 							</div>
 						</div>
 						<div className="col-lg-6 col-md-12 about-img ">
-							<img src={services2} data-tilt alt="" />
+							<img src={vision} data-tilt alt="" />
 						</div>
 					</div>
 				</div>
