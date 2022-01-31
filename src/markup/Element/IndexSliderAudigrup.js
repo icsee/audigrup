@@ -70,7 +70,7 @@ class Index3Slider extends Component{
 						<div className="slide-content-box container">
 							<div className="max-w700 text-white ">
 								
-								<h2 className="dz-title">Audigrup <br/> </h2>
+								<h1 className="dz-title">GRUPO AUDITOR Y FINANCIERO INTEGRAL <br/> </h1>
 								
 							</div>
 						</div>

@@ -34,11 +34,23 @@ import team1 from './../../images/our-team/pic1.jpg';
 import team2 from './../../images/our-team/pic2.jpg';
 import team3 from './../../images/our-team/pic3.jpg';
 import team4 from './../../images/our-team/pic4.jpg';
-import logo1 from './../../images/client-logo/logo/logo1.jpg';
-import logo2 from './../../images/client-logo/logo/logo2.jpg';
-import logo3 from './../../images/client-logo/logo/logo3.jpg';
-import logo4 from './../../images/client-logo/logo/logo4.jpg';
-import logo5 from './../../images/client-logo/logo/logo5.jpg';
+import logo1 from './../../images/logoclientes/Imagen1.png';
+import logo2 from './../../images/logoclientes/Imagen2.png';
+import logo3 from './../../images/logoclientes/Imagen3.png';
+import logo4 from './../../images/logoclientes/Imagen4.png';
+import logo5 from './../../images/logoclientes/Imagen5.png';
+import logo6 from './../../images/logoclientes/Imagen6.png';
+import logo7 from './../../images/logoclientes/Imagen7.jpg';
+import logo8 from './../../images/logoclientes/Imagen8.jpg';
+import logo9 from './../../images/logoclientes/Imagen9.png';
+import logo10 from './../../images/logoclientes/Imagen10.png';
+import logo11 from './../../images/logoclientes/Imagen11.png';
+import logo12 from './../../images/logoclientes/Imagen12.png';
+import logo13 from './../../images/logoclientes/Imagen13.png';
+import logo14 from './../../images/logoclientes/Imagen14.png';
+import logo15 from './../../images/logoclientes/Imagen15.png';
+import logo16 from './../../images/logoclientes/Imagen16.png';
+import logo17 from './../../images/logoclientes/Imagen17.png';
 
 
 const dlabBox=[
@@ -59,13 +71,15 @@ const gridBlog = [
 ];
 
 const teamBlog = [
-	{image: team1, },{image: team2, },{image: team3, },{image: team4, }, 
+	{image: team1, cargo:"Socio Gerente de Auditoria",nombre:"CP DR. HENRY MAURICIO PUENTES CRUZ", resumen:"Amplia experiencia y conocimiento en Revisoría Fiscal y en las áreas de Contabilidad, Auditoria Interna - Externa y Consultoría, Análisis Financiero y evaluación de cuentas, coordinación del trabajo y manejo de relaciones con la alta gerencia de los usuarios. Diplomado en Normas Internaciones de Auditoria NIA Cámara de Comercio de Bogotá 2014, IFRS Normas de información Financiara 2012 Price Wáter House Couper 2012 Gestión Tributaria (Impuestos Nacionales y Distritales) y Gestión de Riesgo de Lavado de Activos y Financiación del Terrorismo (SARLAFT) y Sistema Integrado de Administración de Riesgo (SIAR). Universidad EAN. "  },
+    {image: team2, cargo:"SOCIO – Gerente General", nombre:"CP DR JAVIER RODRIGO JIMÉNEZ AMAYA", resumen:"Con amplia experiencia y conocimiento en las áreas de Contabilidad, Auditoría y Consultoría, coordinación del trabajo y manejo de relaciones con la alta gerencia de los usuarios,  Administración y capacitación técnica de talento humano a cargo, comercialización del portafolio de servicios. Diplomado en Normas Internaciones de Auditoria NIA Cámara de Comercio de Bogotá 2014, IFRS Normas de información Financiara 2012 Price Wáter House Couper 2012 Gestión Tributaria (Impuestos Nacionales y Distritales) y Gestión de Riesgo de Lavado de Activos y Financiación del Terrorismo (SARLAFT) y Sistema Integrado de Administración de Riesgo (SIAR). Universidad EAN." }
+    ,{image: team3, cargo: "Coordinador de Auditoria", nombre:"CP DR. WILMAN ARLEY MUÑOZ BUSTOS", resumen:"Profesional en contaduría pública con una amplia experiencia y conocimiento en las áreas de Contabilidad y evaluación de cuentas, coordinación del trabajo y manejo de excelentes relaciones interpersonales. Diplomado Normas Internacionales de Información Financiera NIIF. Universidad Externado de Colombia 2013. Normas Internacionales de Auditoria y Aseguramiento. Cámara de Comercio de Bogotá 2014.Gestión de Riesgo de Lavado de Activos y Financiación del Terrorismo (SARLAFT) y Sistema Integrado de Administración de Riesgo (SIAR). Universidad EAN."}, 
 ];
 
 const logoBlog = [
-	{ image: logo1},{ image: logo2},{ image: logo3},{ image: logo4},{ image: logo2},{ image: logo3},
-	{ image: logo4},{ image: logo5},{ image: logo1},{ image: logo3},{ image: logo4},{ image: logo2},
-	
+	{ image: logo1},{ image: logo2},{ image: logo3},{ image: logo4},{ image: logo5},{ image: logo6},
+	{ image: logo7},{ image: logo8},{ image: logo9},{ image: logo10},{ image: logo11},{ image: logo12},
+	{ image: logo13},{ image: logo14},{ image: logo15},{ image: logo16},{ image: logo17}
 ];
 
 class IndexAudigrup extends Component {
@@ -135,12 +149,21 @@ class IndexAudigrup extends Component {
                                     <div className="col-lg-7 col-md-8">
                                         <div className="abuot-box row" >
                                             <div className="col-lg-4">
-                                                <h2 className="box-title m-tb0">Audigrup Ltda.<span className="bg-primary"></span></h2>
-                                                <h4 className="text-gray-dark">Nuestra experiencia nos hace su mejor opción.</h4>
+                                                <h2 className="box-title m-tb0">Cómo seleccionar una firma?.<span className="bg-primary"></span></h2>
+                                                <h4 className="text-gray-dark">Nosotros te lo explicamos.</h4>
                                             </div>
                                             <div className="col-lg-8">
-                                                <p>El Grupo Auditor y Financiero Integral, fue constituido en mayo de 2008 por los profesionales expertos en las ciencias contables Javier Rodrigo Jimenez Amaya, Henry Mauricio Puentes Cruz y Wilman Arely Muñoz Bustos, 
-                                                    Contadores Públicos Titulados de profesión, el Grupo profesional que compone AUDIGRUP LTDA cuenta con más de veinte (20) años de experiencia ejerciendo auditoria y Revisoría Fiscal en el Sector Solidario y Comercial.</p>
+                                                <p class=" m-b15">La Declaración Profesional No. 7 del Consejo Técnico de la Contaduría Pública dictamina que “la revisoría fiscal es un órgano de fiscalización que, 
+                                                    en interés de la comunidad, bajo la dirección y responsabilidad del revisor fiscal y con sujeción a las normas de auditoría generalmente aceptadas,
+                                                 le corresponde dictaminar los estados financieros y revisar y evaluar sistemáticamente sus componentes y elementos que integran el control interno, en forma oportuna e independiente en los términos que le señala la ley, 
+                                                 los estatutos y los pronunciamientos profesionales</p>
+                                                 <h4 className="text-gray-dark">¿Qué factores debes tomar en cuenta a la hora de contratar una revisoría fiscal?</h4>
+                                                 <p class=" m-b15">-Liderazgo y responsabilidad por la calidad dentro de la firma</p>
+                                                 <p class=" m-b15">-Monitorear las actividades que realizan los consultores de la firma</p>
+                                                 <p class=" m-b15"> -Deben tener definido un programa de trabajo y evidencia de actividades previamente ejecutadas</p>
+                                                 <p class=" m-b15"> -Deben contar con personal calificado que pueda desarrollar las actividades delegadas dentro de los encargos de auditoría </p>
+                                                 <p class=" m-b15"> -La firma debe diseñar un código de ética aplicable a todo su equipo de trabajo </p>
+                                                 <p class=" m-b15"> -Es necesario que sepan identificar riesgos y controles para atender los casos con comportamiento ético </p>
                                             </div>
                                         </div>
                                     </div>
@@ -165,13 +188,13 @@ class IndexAudigrup extends Component {
                                 </div>
                                 <div className="row m-b50">
 									{teamBlog.map((item,index)=>(
-										<div className="col-lg-3 col-md-6 col-sm-6 m-b30" key={index}>
+										<div className="col-md-6 col-lg-4 col-sm-6 m-b30 " key={index}>
 											<div className="team-section">
 												<img src={item.image} alt="" />
 												<div className="team-content text-white">
-													<p className="m-a0">Manager</p>
-													<h6 className="text-uppercase text-black m-b0">John Deo</h6>
-													<div className="dlab-divider bg-white mt-2 mb-2"></div>
+													<p className="m-a0">{item.cargo}</p>
+													<h6 className="text-uppercase text-black m-b0">{item.nombre}</h6>
+                                                    <div className="dlab-divider bg-white mt-2 mb-2"></div>
 													<ul className="list-inline m-a0">
 														<li><Link to={"#"} className="text-white"><i className="fa fa-facebook"></i></Link></li>
 														<li><Link to={"#"} className="text-white"><i className="fa fa-linkedin"></i></Link></li>
@@ -179,7 +202,13 @@ class IndexAudigrup extends Component {
 														<li><Link to={"#"} className="text-white"><i className="fa fa-twitter"></i></Link></li>
 													</ul>
 												</div>
+                                              
 											</div>
+                                        
+                                            <p class=" m-b15">{item.resumen}</p>		
+														
+											
+                                           
 										</div>
 									))}
                                 </div>
@@ -187,8 +216,8 @@ class IndexAudigrup extends Component {
                             <div className="container">
                                 <div className="row ">
                                     <div className="col-lg-12 text-center section-head">
-                                        <h2 className="m-b10">Nuestros clientes</h2>
-                                        <h5 className="m-b0 font-weight-300 max-w600 m-auto">Our unmatched quality services are recognized by world's top research &amp; review companies</h5>
+                                        <h2 className="m-b10">Experiencia y logros</h2>
+                                        <h5 className="m-b0 font-weight-300 max-w600 m-auto">Nos sentimos orgullosos del camino recorrido hasta el momento de la mano de nuestros clientes</h5>
                                     </div>
                                 </div>
                                 <div className="row m-b30">
