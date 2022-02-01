@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import { Link } from 'react-router-dom';
-import Header2 from '../Layout/header2';
+import Header2 from '../Layout/headerAudigrup';
 import Footer2 from '../Layout/FooterAudigrup';
 import {ConsultingBlog} from './ShortCode/ShortCounter'; 
 import TestimonialStyle2 from './ShortCode/TestimonialStyle2'; 
@@ -137,7 +137,8 @@ class IndexAudigrup extends Component {
 														<h5 className="dlab-tilte">{item.title}</h5>
 														<p>{item.resumen}</p>
 													</div>
-													<Link to={'#'} className="site-button red">Leer más</Link>
+													<Link to={'./services-details'} className="site-button red">Leer más</Link>
+                                                   
 												</div>
 											</div>
 										</div>

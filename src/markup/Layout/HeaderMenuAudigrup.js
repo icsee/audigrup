@@ -7,23 +7,15 @@ class HeaderMenu extends Component{
 			<>
 				<ul className="nav navbar-nav">
 					<li className="active"><Link to={'./'}><span className="ti-home"></span> <i className="fa fa-chevron-down"></i></Link>
-						<ul className="sub-menu">
-							<li><Link to={'./'} className="dez-page">Inicio</Link></li>
-							
-						</ul>
-					</li>
-					<li><Link to={'#'}>Audigrup <i className="fa fa-chevron-down"></i></Link>
-				
-								<ul className="sub-menu">
-									<li><Link to={'./about-1'} className="dez-page">Nosotros</Link></li>
-								</ul>
 						
 					</li>
-					<li><Link to={'#'}>Servicios<i className="fa fa-chevron-down"></i></Link>
-						<ul className="sub-menu">
-							<li><Link to={'./service'} className="dez-page">Services</Link></li>
-							<li><Link to={'./services-details'} className="dez-page">Services Details</Link></li>
-						</ul>
+					<li><Link to={'./about-1'}>Audigrup <i className="fa fa-chevron-down"></i></Link>
+				
+								
+						
+					</li>
+					<li><Link to={'./services-details'}>Servicios<i className="fa fa-chevron-down"></i></Link>
+						
 					</li>
 					
 					<li><Link to={'#'}>Agendas <i className="fa fa-chevron-down"></i></Link>
@@ -32,7 +24,7 @@ class HeaderMenu extends Component{
 							<li><Link to={'./portfolio-grid-2'} className="dez-page">Sector Real </Link></li>
 						</ul>
 					</li>
-					<li><Link to={'#'}>Contáctanos <i className="fa fa-chevron-down"></i></Link>
+					<li><Link to={'/contact'}>Contáctanos <i className="fa fa-chevron-down"></i></Link>
 						
 					</li>
 					

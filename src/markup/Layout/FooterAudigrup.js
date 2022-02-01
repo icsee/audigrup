@@ -13,9 +13,9 @@ class Footer1 extends Component {
                                     <div className="widget widget_services border-0">
                                         <h5 className="m-b30 text-white">Empresa</h5>
                                         <ul>
-											<li><Link to={"#"}>Audigrup </Link></li>
-                                            <li><Link to={"#"}>Home </Link></li>
-                                            <li><Link to={"#"}>Servicios</Link></li>
+											<li><Link to={'./about-1'}>Audigrup </Link></li>
+                                            <li><Link to={'./'}>Home </Link></li>
+                                            <li><Link to={'./services-details'}>Servicios</Link></li>
                                             <li><Link to={"#"}>Nuestro equipo</Link></li>
                                            
                                         </ul>
@@ -26,7 +26,7 @@ class Footer1 extends Component {
                                         <h5 className="m-b30 text-white ">Contactanos</h5>
                                         <ul>
                                             <li><i className="ti-location-pin"></i><strong>Dirección</strong> Cr. 10 # 23-06 OF 401 BOGOTÁ-COLOMBIA </li>
-                                            <li><i className="ti-mobile"></i><strong>Teléfono</strong>3112411218/3124311678</li>
+                                            <li><i className="ti-mobile"></i><strong>Teléfono</strong>3112411218 - 3124311678</li>
                                             <li><i className="ti-email"></i><strong>email</strong>audigrup@audigrup.com.co</li>
                                         </ul>
                                     </div>
@@ -46,21 +46,7 @@ class Footer1 extends Component {
                             </div>
                         </div>
                     </div>
-                    <div className="footer-bottom bg-primary">
-                        <div className="container">
-                            <div className="row">
-                                <div className="col-lg-6 col-md-6 col-sm-6 text-left "> <span>Copyright © 2021 DexignZone</span> </div>
-                                <div className="col-lg-6 col-md-6 col-sm-6 text-right ">
-                                    <div className="widget-link ">
-                                        <ul>
-                                            <li><Link to={"#"}> Help Desk</Link></li>
-                                            <li className="ml-1"><Link to={"#"}> Privacy Policy</Link></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
+                    
                 </footer>
             </>
         );

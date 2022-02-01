@@ -24,7 +24,13 @@
     "simple-react-google-maps": "^1.1.2",
     "simple-react-lightbox": "^3.6.6",
     "use-scroll-position": "0.0.4",
-    "web-vitals": "^1.1.1"
+    "web-vitals": "^1.1.1",
+    "react-redux": "^7.2.4",
+    "react-redux-form": "^1.16.14",    
+    "redux": "^4.1.0",
+    "redux-form": "^8.3.7",
+    "redux-logger": "^3.0.6",
+    "redux-thunk": "^2.3.0"
   },
   "scripts": {
     "start": "react-scripts start",
