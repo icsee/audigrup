@@ -50,11 +50,11 @@ class Contact extends Component {
                                             <div className="icon-bx-wraper bx-style-1 p-a20 radius-sm">
                                                 <div className="icon-content">
                                                     <h5 className="dlab-tilte">
-                                                        <span className="icon-sm text-primary text-left"><i className="ti-location-pin"></i></span>
+                                                        <span className="icon-sm text-red  text-left"><i className="ti-location-pin"></i></span>
                                                         Estamos ubicados en
 													</h5>
                                                     <p>Cr. 10 No 23 - 06 Of. 401 Bogotá-Colombia </p>
-                                                    <h6 className="m-b15 font-weight-400"><i className="ti-alarm-clock"></i> Horario</h6>
+                                                    <h6 className="m-b15 font-weight-400 "><i className="ti-alarm-clock"></i> Horario</h6>
                                                     <p className="m-b0">Lunes a viernes - 8:00 am -5:00 pm</p>
                                                     <p>Sábados - 8:00 am a 12:00 pm</p>
                                                 </div>
@@ -64,7 +64,7 @@ class Contact extends Component {
                                             <div className="icon-bx-wraper bx-style-1 p-a20 radius-sm">
                                                 <div className="icon-content">
                                                     <h5 className="dlab-tilte">
-                                                        <span className="icon-sm text-primary text-left"><i className="ti-email"></i></span>
+                                                        <span className="icon-sm text-red text-left"><i className="ti-email"></i></span>
                                                         E-mail
 													</h5>
                                                     <p className="m-b0">audigrup@audigrup.com.co</p>
@@ -76,7 +76,7 @@ class Contact extends Component {
                                             <div className="icon-bx-wraper bx-style-1 p-a20 radius-sm">
                                                 <div className="icon-content">
                                                     <h5 className="dlab-tilte">
-                                                        <span className="icon-sm text-primary text-left"><i className="ti-mobile"></i></span>
+                                                        <span className="icon-sm text-red text-left"><i className="ti-mobile"></i></span>
                                                         Teléfonos
 														</h5>
                                                     <p>3112411218</p>
@@ -88,14 +88,15 @@ class Contact extends Component {
                                 </div>
                                 <div className="col-lg-8 col-xs-8">
                                 <Form model="feedback" onSubmit={(values) => this.handleSubmit(values)}>
-                                 <Row className="form-group">
+                                 <Row className="form-group text-white">
+                                   
                                 <Label htmlFor="firstname" md={2}>Nombre y Apellidos</Label>
                                 <Col md={10}>
                                     <Control.text model=".firstname" id="firstname" name="firstname"
                                         placeholder="Nombre y Apellidos"
                                         className="form-control"
                                         validators={{
-                                            required, minLength: minLength(3), maxLength: maxLength(15)
+                                            required, minLength: minLength(5), maxLength: maxLength(50)
                                         }}
                                          />
                                     <Errors
@@ -103,15 +104,15 @@ class Contact extends Component {
                                         model=".firstname"
                                         show="touched"
                                         messages={{
-                                            required: 'Requerido',
-                                            minLength: 'Debe contener más de dos letras',
-                                            maxLength: 'Debe contener más de dos letras'
+                                            required: 'Requerido ',
+                                            minLength: 'Debe contener más de cinco letras',
+                                            maxLength: 'Debe contener entre 5 y 50 letras'
                                         }}
                                      />
                                 </Col>
                             </Row>
                             
-                            <Row className="form-group">
+                            <Row className="form-group text-white">
                                 <Label htmlFor="telnum" md={2}>Contacto.</Label>
                                 <Col md={10}>
                                     <Control.text model=".telnum" id="telnum" name="telnum"
@@ -126,7 +127,7 @@ class Contact extends Component {
                                         model=".telnum"
                                         show="touched"
                                         messages={{
-                                            required: 'Requerido',
+                                            required: 'Requerido ',
                                             minLength: 'Debe ser mayor a 2 números',
                                             maxLength: 'Debe contener 10 numeros o menos',
                                             isNumber: 'Debe ser un número'
@@ -135,7 +136,7 @@ class Contact extends Component {
                                 </Col>
                             </Row>
                             
-                            <Row className="form-group">
+                            <Row className="form-group text-white">
                                 <Label htmlFor="email" md={2}>Email</Label>
                                 <Col md={10}>
                                     <Control.text model=".email" id="email" name="email"
@@ -150,13 +151,13 @@ class Contact extends Component {
                                         model=".email"
                                         show="touched"
                                         messages={{
-                                            required: 'Required',
-                                            validEmail: 'Invalid Email Address'
+                                            required: 'Required ',
+                                            validEmail: 'Email inválido '
                                         }}
                                      />
                                 </Col>
                             </Row>
-                            <Row className="form-group">
+                            <Row className="form-group text-white">
                                 <Label htmlFor="message" md={2}>Tus comentarios</Label>
                                 <Col md={10}>
                                     <Control.textarea model=".message" id="message" name="message"
@@ -166,7 +167,7 @@ class Contact extends Component {
                             </Row>
                             <Row className="form-group">
                                 <Col md={{size:10, offset: 2}}>
-                                    <Button type="submit" color="primary">
+                                    <Button type="submit" color="red">
                                     Enviar
                                     </Button>
                                 </Col>
