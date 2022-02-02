@@ -1,6 +1,8 @@
 import * as ActionTypes from './ActionTypes';
 import { baseUrl } from '../shared/baseUrl';
 import {InitialFeedback} from './forms'
+import Cookie from 'react-cookie';            
+            
 
 
 
@@ -20,8 +22,7 @@ export const postFeedback = (firstname,telnum, email, message,token) => (dispatc
           headers: {
             "Content-Type": "application/json",
             "X-CSRF-TOKEN": token,
-            
-          },
+              },
           credentials: "same-origin"
         })
         .then(response => {
@@ -85,7 +86,7 @@ export const fetchToken = () => (dispatch) => {
           var errmess = new Error(error.message);
           throw errmess;
     })
-  .then(response => response.text()) 
+  .then(response => response.json()) 
   .then(token => {dispatch(addToken(token))})
   .catch(error => dispatch(tokenFailed(error.message)));
 }
