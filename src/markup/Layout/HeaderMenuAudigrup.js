@@ -28,8 +28,8 @@ class HeaderMenu extends Component{
 					
 					<li><Link to={'#'}>Agendas <i className="fa fa-chevron-down"></i></Link>
 						<ul className="sub-menu left">
-							<li><Link to={'./portfolio-full-width'} className="dez-page">Sector solidario  </Link></li>
-							<li><Link to={'./portfolio-grid-2'} className="dez-page">Sector Real </Link></li>
+							<li><Link to={'./real-sectors'} className="dez-page">Sector Real</Link></li>
+							<li><Link to={'./solidarity-sectors'} className="dez-page">Sector Solidario</Link></li>
 						</ul>
 					</li>
 					<li><Link to={'#'}>Contáctanos <i className="fa fa-chevron-down"></i></Link>

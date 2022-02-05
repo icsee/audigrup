@@ -9,6 +9,7 @@ import {FormBlog} from './ShortCode/ShortForm';
 import OurBlogSlider from '../Element/OurBlogSlider';
 // Se cambio Index3Slider
 import Index3Slider from '../Element/IndexSliderAudigrup';
+import Bolletin from './Main/Bolletin';
 
 //Images
 import bg1 from './../../images/background/bg1.jpg';
@@ -200,6 +201,7 @@ class IndexAudigrup extends Component {
                                 </div>
                                 
                             </div>
+                            <Bolletin />
                         </div>
                         
                         {/* <!-- About Quotes End --> */}

@@ -62,6 +62,10 @@ import ShortAccordions from './Pages/ShortCode/ShortAccordions';
 
 import ScrollToTop from './Element/ScrollToTop';
 
+import RealSector from './Pages/Agendas/RealSector';
+import SolidaritySector from './Pages/Agendas/SolidaritySector';
+
+
 class Markup extends Component{
 	render(){
 		return(
@@ -88,6 +92,8 @@ class Markup extends Component{
                         <Route path='/contact' exact component={Contact} />
                         <Route path='/service' exact component={Service} />
                         <Route path='/services-details' exact component={ServicesDetails} />
+                        <Route path='/real-sectors' exact component={RealSector}/>
+                        <Route path='/solidarity-sectors' exact component={SolidaritySector}/>
                         <Route path='/blog-standard' exact component={BlogStandard} />
                         <Route path='/blog-standard-left-sidebar' exact component={BlogStandardLeftSidebar} />
                         <Route path='/blog-standard-right-sidebar' exact component={BlogStandardRightSidebar} />

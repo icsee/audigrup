@@ -48,6 +48,8 @@ class HeaderMenu extends Component{
 						<ul className="sub-menu">
 							<li><Link to={'./service'} className="dez-page">Services</Link></li>
 							<li><Link to={'./services-details'} className="dez-page">Services Details</Link></li>
+							<li><Link to={'./real-sectors'} className='dez-page'>Sector Real</Link></li>
+							<li><Link to={'./solidarity-sectors'} className='dez-page'>Sector Solidario</Link></li>
 						</ul>
 					</li>
 					<li><Link to={'#'}>Blog <i className="fa fa-chevron-down"></i></Link>
