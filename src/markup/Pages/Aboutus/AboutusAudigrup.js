@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 // import { Link } from 'react-router-dom';
-import Header from '../../Layout/header2';
+import Header from '../../Layout/headerAudigrup';
 import Footer from '../../Layout/FooterAudigrup';
 import PageTitle from '../../Layout/PageTitle';
 import SectionCounter from '../../Element/SectionCounterAudigrup';

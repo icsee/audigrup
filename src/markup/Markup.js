@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
-import { BrowserRouter, Route, Switch } from 'react-router-dom';
+import {  Route, Switch, withRouter, Redirect } from 'react-router-dom';
+
 import ThemeButton from './Element/ThemeButton/ThemeButton';
 
 import Homepage from './Pages/Homepage1';
@@ -24,9 +25,9 @@ import Team from './Pages/Team';
 import Faqs from './Pages/Faqs';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
-import Contact from './Pages/Contact';
+import Contact from './Pages/ContactAudigrup';
 import Service from './Pages/Service/Service';
-import ServicesDetails from './Pages/Service/ServicesDetails';
+import ServicesDetails from './Pages/Service/ServicesAudigrup';
 import BlogStandard from './Pages/BlogStandard/BlogStandard';
 import BlogStandardLeftSidebar from './Pages/BlogStandard/BlogStandardLeftSidebar';
 import BlogStandardRightSidebar from './Pages/BlogStandard/BlogStandardRightSidebar';
@@ -61,16 +62,60 @@ import ShortForm from './Pages/ShortCode/ShortForm';
 import ShortAccordions from './Pages/ShortCode/ShortAccordions';
 
 import ScrollToTop from './Element/ScrollToTop';
+import { connect } from 'react-redux';
+import { actions } from 'react-redux-form';
+import { postFeedback,fetchToken } from '../redux/ActionCreators';
+import { TransitionGroup, CSSTransition } from 'react-transition-group';
+
+const mapStateToProps = state => {
+  return {
+    token: state.token
+    
+    
+  }
+}
+
+
+
+
+
+const mapDispatchToProps = dispatch => ({
+  
+   
+    postFeedback: (firstname, telnum, email, message, token)  => dispatch(postFeedback(firstname,  telnum,  email, message, token)),
+   
+    resetFeedbackForm: () => { dispatch(actions.reset('feedback'))},
+    fetchToken: () => { dispatch(fetchToken())},
+  
+  });
+  
+
+
 
 import RealSector from './Pages/Agendas/RealSector';
 import SolidaritySector from './Pages/Agendas/SolidaritySector';
 
 
 class Markup extends Component{
+    
+  constructor(props) {
+    super(props);
+   
+  }
+
+
+
+  componentDidMount() {
+    this.props.fetchToken();
+      }
+
+
 	render(){
 		return(
-			<BrowserRouter basename="/react/demo">
+			
                 <div className="page-wraper">
+                <TransitionGroup>
+                
                     <Switch>
                         <Route path='/' exact component={IndexAudigrup} />
                         <Route path='/index-3' exact component={IndexAudigrup} />
@@ -89,7 +134,9 @@ class Markup extends Component{
                         <Route path='/faqs' exact component={Faqs} />
                         <Route path='/login' exact component={Login} />
                         <Route path='/register' exact component={Register} />
-                        <Route path='/contact' exact component={Contact} />
+                        <Route path='/contact' component={() => <Contact resetFeedbackForm={this.props.resetFeedbackForm}
+                                                                                 postFeedback={this.props.postFeedback} token={this.props.token}/>} />
+
                         <Route path='/service' exact component={Service} />
                         <Route path='/services-details' exact component={ServicesDetails} />
                         <Route path='/real-sectors' exact component={RealSector}/>
@@ -124,15 +171,17 @@ class Markup extends Component{
                         <Route path='/short-team' exact component={ShortTeam} />
                         <Route path='/short-testimonial' exact component={ShortTestimonial} />
                         <Route path='/short-form' exact component={ShortForm} />
-                        <Route path='/short-accordions' exact component={ShortAccordions} />						
+                        <Route path='/short-accordions' exact component={ShortAccordions} />	
+                        <Redirect to="/" />					
 					</Switch>
+                   
+                   </TransitionGroup>
                 </div>
-				<ScrollToTop />
-				<ThemeButton />
-            </BrowserRouter>	
+				
+         
 		)
 	}
 	
 }
 
-export default Markup;
+export default withRouter(connect(mapStateToProps,mapDispatchToProps)(Markup));
