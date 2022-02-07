@@ -1,12 +1,11 @@
 import React from "react";
-import { API } from "../../Constants";
-import Header from '../../Layout/header2';
+import { API } from "../../../shared/baseUrl";
+import Header from '../../Layout/headerAudigrup';
 import Footer from '../../Layout/FooterAudigrup';
 //Modal
 import ModalAudigrup from '../../Element/Modal/ModalAudigrup';
 import { FaFileDownload } from 'react-icons/fa/';
-import { Button } from 'react-bootstrap';
-import { Alert } from "bootstrap";
+import { Button, Alert } from 'react-bootstrap';
 import { uuid } from 'uuidv4';
 
 
@@ -22,7 +21,8 @@ class Bolletin extends React.Component {
             showModal: false,
             title: '',
             body: null,
-            enableCloseButton: false
+            enableCloseButton: false,
+            backGroundModal:'bg-warning'
         };
 
         this.handlerModal = this.handlerModal.bind(this)
@@ -34,7 +34,6 @@ class Bolletin extends React.Component {
         })
     }
 
-
     // ComponentDidMount is used to
     // execute the code 
     componentDidMount() {
@@ -44,6 +43,7 @@ class Bolletin extends React.Component {
             titleModal: 'Cargando...',
             bodyModal: null,
             enableCloseButton: false,
+            backGroundModal:'bg-warning'
         })
 
         fetch(`${API.BOLLETINS}`)
@@ -57,17 +57,8 @@ class Bolletin extends React.Component {
             })
     }
 
-    notFoundFile = () => {
-        this.setState({
-            showModal: true,
-            titleModal: 'Falla en el archivo',
-            bodyModal: 'Archivo no existe. Contacte su administrador.',
-            enableCloseButton: true,
-        })
-    }
-
     render() {
-        const { dataisLoaded, bolletinList, titleModal, bodyModal, enableCloseButton, showModal } = this.state;
+        const { dataisLoaded, bolletinList, titleModal, bodyModal, enableCloseButton, showModal, backGroundModal } = this.state;
 
         return (
             <>
@@ -77,7 +68,8 @@ class Bolletin extends React.Component {
                     show={showModal}
                     titleModal={titleModal}
                     bodyModal={bodyModal}
-                    enableCloseButton={enableCloseButton} />
+                    enableCloseButton={enableCloseButton} 
+                    backGroundModal={backGroundModal}/>
 
 
                 <div className="section-ful our-about-info content-inner-1 " style={{ backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
@@ -88,9 +80,9 @@ class Bolletin extends React.Component {
                             <p className="m-b0">Review boletines</p>
                         </div>
 
-                        {dataisLoaded && bolletinList.length == 0 && (
-                            <Alert key={uuid()} variant='danger'>
-                                No cuenta con un listado de sectores solidarios. Contacte a su administrador.
+                        {typeof(bolletinList.length) === 'undefined' &&(
+                            <Alert variant='danger'>
+                                No cuenta con un listado de boletines. Contacte a su administrador.
                             </Alert>
                         )}
 
@@ -98,13 +90,14 @@ class Bolletin extends React.Component {
                             <>
                                 <div className=" row dzseth  m-b30" key={bolletin.idbolletin}>
                                     <div className="col-lg-6 col-md-12 m-b30 about-img ">
-                                        <img src={bolletin.contentImage} alt={bolletin.extensionImage.id ? 'Not Found Image' : 'imagebolletin'} />
+                                        <center>
+                                        <img class="img-fluid" src={bolletin.contentImage} alt={bolletin.extensionImage.id ? 'Not Found Image' : 'imagebolletin'} />
+                                        </center>
                                     </div>
                                     <div className="col-lg-6 col-md-12 m-b30 dis-tbl text-justify">
                                         <div className="dis-tbl-cell">
                                             <h2 className="box-title m-tb0">{bolletin.title}<span className="bg-primary"></span></h2>
                                             <p>Fecha de publicación: {bolletin.publicationDateFinal}  </p>
-                                            <h3 className="box-title">{bolletin.title}<span className="bg-primary"></span></h3>
                                             <p className="font-16">{bolletin.review}</p>
                                             <p className="font-16">{bolletin.summary}</p>
                                         </div>

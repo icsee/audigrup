@@ -1,12 +1,11 @@
 import React from "react";
-import { API } from "../../Constants";
-import Header from '../../Layout/header2';
+import { API } from "../../../shared/baseUrl";
+import Header from '../../Layout/headerAudigrup';
 import Footer from '../../Layout/FooterAudigrup';
 //Modal
 import ModalAudigrup from '../../Element/Modal/ModalAudigrup';
 import { FaFileDownload } from 'react-icons/fa/';
-import { Button } from 'react-bootstrap';
-import { Alert } from "bootstrap";
+import { Button, Alert } from 'react-bootstrap';
 import { uuid } from 'uuidv4';
 
 
@@ -22,7 +21,7 @@ class RealSector extends React.Component {
             showModal: false,
             title: '',
             body: null,
-            enableCloseButton: false
+            enableCloseButton: false,
         };
 
         this.handlerModal = this.handlerModal.bind(this)
@@ -47,12 +46,28 @@ class RealSector extends React.Component {
         })
 
         fetch(`${API.REAL_SECTOR}`)
-            .then((res) => res.json())
+            .then((res) => {
+                if (res.status == 200) {
+                    return Promise.resolve(res.json())
+                }
+                else if (res.status == 404) {
+                    return Promise.reject(res.json())
+                }
+                else
+                    return alert('Error fatal. Contacte su administrador.')
+            })
             .then((realSectorList) => {
                 this.setState({
                     realSectorList,
-                    dataisLoaded: realSectorList.length >= 0 ? true : false,
-                    showModal: false
+                    dataisLoaded: true,
+                    showModal: false,
+                });
+            })
+            .catch(err => {
+                this.setState({
+                    realSectorList: [],
+                    dataisLoaded: true,
+                    showModal: false,
                 });
             })
     }
@@ -107,7 +122,7 @@ class RealSector extends React.Component {
     }
 
     render() {
-        const { dataisLoaded, realSectorList, titleModal, bodyModal, enableCloseButton, showModal } = this.state;
+        const { dataisLoaded, realSectorList, titleModal, bodyModal, enableCloseButton, showModal, responseStatus } = this.state;
 
         return (
             <>
@@ -130,9 +145,9 @@ class RealSector extends React.Component {
                             <p className="m-b0">Review sector real</p>
                         </div>
 
-                        {dataisLoaded && realSectorList.length == 0 && (
-                            <Alert key={uuid()} variant='danger'>
-                                No cuenta con un listado de sectores solidarios. Contacte a su administrador.
+                        {dataisLoaded && realSectorList.length=== 0 && (
+                            <Alert variant='danger'>
+                                No cuenta con un listado de sectores reales. Contacte a su administrador.
                             </Alert>
                         )}
 
@@ -140,18 +155,19 @@ class RealSector extends React.Component {
                             <>
                                 <div className=" row dzseth  m-b30" key={realSector.idRealSector}>
                                     <div className="col-lg-6 col-md-12 m-b30 about-img ">
-                                        <img src={realSector.contentImage} alt={realSector.extensionImage.id ? 'Not Found Image' : 'imageRealSector'} />
+                                        <center>
+                                            <img src={realSector.contentImage} alt={realSector.extensionImage.id ? 'Not Found Image' : 'imageRealSector'} />
+                                        </center>
                                     </div>
                                     <div className="col-lg-6 col-md-12 m-b30 dis-tbl text-justify">
                                         <div className="dis-tbl-cell">
                                             <h2 className="box-title m-tb0">{realSector.title}<span className="bg-primary"></span></h2>
                                             <p>Fecha de publicación: {realSector.publicationDateFinal}  </p>
-                                            <h3 className="box-title">{realSector.title}<span className="bg-primary"></span></h3>
+                                            <Button variant="dark" value={realSector.idRealSector} onClick={this.handleClick.bind(this, realSector)}>
+                                                <FaFileDownload />  Descargar
+                                            </Button>
                                             <p className="font-16">{realSector.summary}</p>
                                         </div>
-                                        <Button variant="dark" value={realSector.idRealSector} onClick={this.handleClick.bind(this, realSector)}>
-                                            <FaFileDownload />  Descargar
-                                        </Button>
                                     </div>
                                 </div>
                             </>

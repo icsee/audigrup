@@ -1,12 +1,11 @@
 import React from "react";
-import { API } from "../../Constants";
-import Header from '../../Layout/header2';
+import { API } from "../../../shared/baseUrl";
+import Header from '../../Layout/headerAudigrup';
 import Footer from '../../Layout/FooterAudigrup';
 //Modal
 import ModalAudigrup from '../../Element/Modal/ModalAudigrup';
 import { FaFileDownload } from 'react-icons/fa/';
-import { Button } from 'react-bootstrap';
-import { Alert } from "bootstrap";
+import { Button, Alert } from 'react-bootstrap';
 import { uuid } from 'uuidv4';
 
 
@@ -44,15 +43,32 @@ class SolidaritySector extends React.Component {
             titleModal: 'Cargando...',
             bodyModal: null,
             enableCloseButton: false,
+
         })
 
         fetch(`${API.SOLIDARITY_SECTOR}`)
-            .then((res) => res.json())
+            .then((res) => {
+                if (res.status == 200) {
+                    return Promise.resolve(res.json())
+                }
+                else if (res.status == 404) {
+                    return Promise.reject(res.json())
+                }
+                else
+                    return alert('Error fatal. Contacte su administrador.')
+            })
             .then((solidaritySectorList) => {
                 this.setState({
                     solidaritySectorList,
-                    dataisLoaded: solidaritySectorList.length >= 0 ? true : false,
-                    showModal: false
+                    dataisLoaded: true,
+                    showModal: false,
+                });
+            })
+            .catch(err => {
+                this.setState({
+                    solidaritySectorList: [],
+                    dataisLoaded: true,
+                    showModal: false,
                 });
             })
     }
@@ -63,6 +79,7 @@ class SolidaritySector extends React.Component {
             titleModal: 'Falla en el archivo',
             bodyModal: 'Archivo no existe. Contacte su administrador.',
             enableCloseButton: true,
+            backGroundModal: 'bg-danger'
         })
     }
 
@@ -73,6 +90,7 @@ class SolidaritySector extends React.Component {
             titleModal: 'Descargando...',
             bodyModal: null,
             enableCloseButton: false,
+            backGroundModal: 'bg-warning'
         })
 
         fetch(
@@ -107,7 +125,7 @@ class SolidaritySector extends React.Component {
     }
 
     render() {
-        const { dataisLoaded, solidaritySectorList, titleModal, bodyModal, enableCloseButton, showModal } = this.state;
+        const { dataisLoaded, solidaritySectorList, titleModal, bodyModal, enableCloseButton, showModal, backGroundModal } = this.state;
 
         return (
             <>
@@ -119,7 +137,8 @@ class SolidaritySector extends React.Component {
                     show={showModal}
                     titleModal={titleModal}
                     bodyModal={bodyModal}
-                    enableCloseButton={enableCloseButton} />
+                    enableCloseButton={enableCloseButton}
+                    backGroundModal={backGroundModal} />
 
 
                 <div className="section-ful our-about-info content-inner-1 " style={{ backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>
@@ -130,8 +149,8 @@ class SolidaritySector extends React.Component {
                             <p className="m-b0">Review sector solidario</p>
                         </div>
 
-                        {dataisLoaded && solidaritySectorList.length == 0 && (
-                            <Alert key={uuid()} variant='danger'>
+                        {dataisLoaded && solidaritySectorList.length===0 && (
+                            <Alert variant='danger'>
                                 No cuenta con un listado de sectores solidarios. Contacte a su administrador.
                             </Alert>
                         )}
@@ -140,18 +159,19 @@ class SolidaritySector extends React.Component {
                             <>
                                 <div className=" row dzseth  m-b30" key={solidaritySector.idSolidaritySector}>
                                     <div className="col-lg-6 col-md-12 m-b30 about-img ">
-                                        <img src={solidaritySector.contentImage} alt={solidaritySector.extensionImage.id ? 'Not Found Image' : 'imageRealSector'} />
+                                        <center>
+                                            <img src={solidaritySector.contentImage} alt={solidaritySector.extensionImage.id ? 'Not Found Image' : 'imageRealSector'} />
+                                        </center>
                                     </div>
                                     <div className="col-lg-6 col-md-12 m-b30 dis-tbl text-justify">
                                         <div className="dis-tbl-cell">
                                             <h2 className="box-title m-tb0">{solidaritySector.title}<span className="bg-primary"></span></h2>
                                             <p>Fecha de publicación: {solidaritySector.publicationDateFinal}  </p>
-                                            <h3 className="box-title">{solidaritySector.title}<span className="bg-primary"></span></h3>
+                                            <Button variant="dark" value={solidaritySector.idSolidaritySector} onClick={this.handleClick.bind(this, solidaritySector)}>
+                                                <FaFileDownload />  Descargar
+                                            </Button>
                                             <p className="font-16">{solidaritySector.summary}</p>
                                         </div>
-                                        <Button variant="dark" value={solidaritySector.idSolidaritySector} onClick={this.handleClick.bind(this, solidaritySector)}>
-                                            <FaFileDownload />  Descargar
-                                        </Button>
                                     </div>
                                 </div>
                             </>

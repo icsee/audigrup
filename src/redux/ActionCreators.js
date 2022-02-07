@@ -38,7 +38,7 @@ export const postFeedback = (firstname,telnum, email, message,token) => (dispatc
               throw error;
         })
         .then(response => response.json())
-        .catch(error =>  { console.log('post feedback', error.message); alert('Your feedback could not be posted\nError: '+error.message); });
+        .catch(error =>  { console.log('post feedback', error.message); });
         
 }
 

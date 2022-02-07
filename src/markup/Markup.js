@@ -25,7 +25,7 @@ import Team from './Pages/Team';
 import Faqs from './Pages/Faqs';
 import Login from './Pages/Login';
 import Register from './Pages/Register';
-import Contact from './Pages/ContactAudigrup';
+import Contact from './Pages/Contacts/ContactAudigrup';
 import Service from './Pages/Service/Service';
 import ServicesDetails from './Pages/Service/ServicesAudigrup';
 import BlogStandard from './Pages/BlogStandard/BlogStandard';
@@ -67,6 +67,10 @@ import { actions } from 'react-redux-form';
 import { postFeedback,fetchToken } from '../redux/ActionCreators';
 import { TransitionGroup, CSSTransition } from 'react-transition-group';
 
+import RealSector from './Pages/Agendas/RealSector';
+import SolidaritySector from './Pages/Agendas/SolidaritySector';
+
+
 const mapStateToProps = state => {
   return {
     token: state.token
@@ -88,12 +92,6 @@ const mapDispatchToProps = dispatch => ({
     fetchToken: () => { dispatch(fetchToken())},
   
   });
-  
-
-
-
-import RealSector from './Pages/Agendas/RealSector';
-import SolidaritySector from './Pages/Agendas/SolidaritySector';
 
 
 class Markup extends Component{

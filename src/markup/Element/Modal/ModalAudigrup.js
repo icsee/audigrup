@@ -14,7 +14,8 @@ class ModalAudigrup extends React.Component {
 
     this.state = {
       show: props.show,
-      open: props.open
+      open: props.open,
+      backGroundModal:props.backGroundModal
     };
   }
 
@@ -22,8 +23,9 @@ class ModalAudigrup extends React.Component {
     if (this.props.show !== prevProps.show) {
       this.setState({ 
         show: this.props.show, 
-        title:this.props.title,
-        body: this.props.body,
+        titleModal:this.props.titleModal,
+        bodyModal: this.props.bodyModal,
+        backGroundModal:this.props.backGroundModal,
         enableCloseButton:this.props.enableCloseButton
       })
     }
@@ -35,7 +37,7 @@ class ModalAudigrup extends React.Component {
       this.setState({ show: false });
       this.props.handlerModal();
     }
-    const { show, open ,enableCloseButton} = this.state
+    const { show, open ,enableCloseButton, backGroundModal} = this.state
 
     return (
       <>
@@ -47,7 +49,7 @@ class ModalAudigrup extends React.Component {
           backdrop="static"
           keyboard={false}
         >
-          <Modal.Header closeButton={enableCloseButton}>
+          <Modal.Header className={backGroundModal} closeButton={enableCloseButton}>
             <Modal.Title>{this.props.titleModal}</Modal.Title>
           </Modal.Header>
           <Modal.Body>
