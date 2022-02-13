@@ -20,8 +20,9 @@ class SectionCounter extends Component{
 				<div className="section-full content-inner-1 overlay-primary about-service bg-img-fix" style={{ backgroundImage: "url(" + bg1 + ")" }}>
 					<div className="container">
 						<div className="section-head text-white text-center">
-							<h2 className="box-title m-tb0 max-w800 m-auto">Nuestros valores corporativos<span className="bg-primary"></span></h2>
-							<p>Trabajamos con ética y calidad humana</p>
+							<h1 className="box-title m-tb0 max-w800 m-auto">Nuestros valores corporativos<span className="bg-primary"></span></h1>
+							<h3 className="box-title m-tb0 max-w800 m-auto">Trabajamos con ética y calidad humana</h3>
+						
 						</div>
 					</div>
 					<div className="container">
@@ -31,8 +32,9 @@ class SectionCounter extends Component{
 									<div className="icon-bx-wraper bx-style-1 center">
 										<div className="icon-lg text-white m-b20 "> <span className="icon-cell icon-lg ">{item.icon}</span> </div>
 										<div className="icon-content">
-											<h5 className="dlab-tilte text-uppercase">{item.title}</h5>
-											<p>{item.texto}</p>
+											<h3 className="dlab-tilte text-uppercase">{item.title}</h3>
+											<h4 className="box-title m-tb0 max-w800 m-auto">{item.texto}</h4>
+									
 										</div>
 									</div>
 								</div>

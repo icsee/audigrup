@@ -53,7 +53,9 @@ import logo14 from './../../images/logoclientes/Imagen14.png';
 import logo15 from './../../images/logoclientes/Imagen15.png';
 import logo16 from './../../images/logoclientes/Imagen16.png';
 import logo17 from './../../images/logoclientes/Imagen17.png';
-
+import dian from './../../images/logoclientes/dian.png';
+import shd from './../../images/logoclientes/shd.jpg';
+import supersociedades from './../../images/logoclientes/supersociedades.png';
 
 const dlabBox=[
 	{icon: <i className="flaticon-search" />, title:'Revisoría Fiscal', image: revisoriafiscal, resumen:'Órgano de fiscalización de las empresas, que tiene como finalidad verificar el cumplimiento de normas internas y externas, y dictaminar los estados financiero.            ' },
@@ -136,8 +138,9 @@ class IndexAudigrup extends Component {
 														<span className="icon-cell icon-lg ">{item.icon}</span>
 													</div>
 													<div className="icon-content m-b20">
-														<h5 className="dlab-tilte">{item.title}</h5>
-														<p>{item.resumen}</p>
+														<h4 className="dlab-tilte">{item.title}</h4>
+                                                        <h6 className="dlab-tilte">{item.resumen}</h6>
+														
 													</div>
 													<Link to={'./services-details'} className="site-button red">Leer más</Link>
                                                    
@@ -152,7 +155,7 @@ class IndexAudigrup extends Component {
                                     <div className="col-lg-7 col-md-8">
                                         <div className="abuot-box row" >
                                             <div className="col-lg-4">
-                                                <h2 className="box-title m-tb0">Cómo seleccionar una firma?.<span className="bg-primary"></span></h2>
+                                                <h2 className="box-title m-tb0">Por que elegirnos como una firma asesora y auditora?.<span className="bg-primary"></span></h2>
                                                 <h4 className="text-gray-dark">Nosotros te lo explicamos.</h4>
                                             </div>
                                             <div className="col-lg-8">
@@ -233,6 +236,17 @@ class IndexAudigrup extends Component {
                                 
                             </div>
                             <Bolletin />
+                            <div className="container">
+                                <div className="row ">
+                                    <div className="col-lg-12 text-center section-head">
+                                        <h2 className="m-b10">Links de interes</h2>
+                                    </div>
+                                </div>
+                               
+                                <a target="_blank" href="https://www.dian.gov.co/"><img src={dian} alt="" /></a>  
+                                <a target="_blank" href="https://www.shd.gov.co/shd/"><img src={shd} alt="" /></a>
+                                <a target="_blank" href="https://supersociedades.gov.co/SitePages/Inicio.aspx"><img src={supersociedades} alt="" /></a>          
+                            </div>
                         </div>
                         
                         {/* <!-- About Quotes End --> */}

@@ -6,7 +6,7 @@ import PageTitle from '../../Layout/PageTitle';
 import SectionCounter from '../../Element/SectionCounterAudigrupServicio';
 import TestimonialCarousel from '../../Element/TestimonialCarousel';
 import FormStyle from '../../Element/FormStyle';
-
+import ThemeButton from '../../Element/ThemeButton/ThemeButtonAudigrup';
 //Images
 import bnr1 from './../../../images/banner/bnr4.jpg';
 import bgmap from './../../../images/background/bg-map.jpg';
@@ -17,11 +17,11 @@ import salud from './../../../images/audigrup/salud.jpg';
 import calidad from './../../../images/audigrup/calidad.jpg';
 
 const iconWraper=[
-	{icon: <i className="flaticon-devices" />, title:'Sistemas', resumen:'Lo importante de la Auditoria Integral es evaluar las aplicaciones existentes, el hardware utilizado y en general la evaluación del área de sistemas'},
+	
 	{icon: <i className="flaticon-pen" />, title:'Financiera', resumen:'Determinar si los estados financieros de la Entidad, correspondientes al año terminado se presentan de acuerdo con Normas de Contabilidad Generalmente aceptadas en Colombia y si reflejan razonablemente la situación financiera.'},
 	{icon: <i className="flaticon-accounting" />, title:'Control Interno', resumen:'Evaluar el sistema de control interno de la  Organización, para conceptuar sobre el adecuado uso del mismo, identificar sus debilidades y presentar recomendaciones para el fortalecimiento de éste. '},
 	{icon: <i className="flaticon-management" />, title:'Cumplimiento y Gestión', resumen:'Verificar el cumplimiento de las disposiciones adoptadas por los órganos de Admón. Lo mismo que las normas legales y reglamentaciones relacionadas con sus operaciones. Evaluar y conceptuar sobre la gestión realizada por los órganos administrativos.'},
-	
+	{icon: <i className="flaticon-devices" />, title:'Sistemas', resumen:'Lo importante de la Auditoria Integral es evaluar las aplicaciones existentes, el hardware utilizado y en general la evaluación del área de sistemas'},
 
 ];
 
@@ -70,8 +70,8 @@ class ServicesDetails extends Component {
 															<div className="icon-cell icon-lg">{data.icon}</div>
 														</div>
 														<div className="icon-content m-b20">
-															<h5 className="dlab-tilte">{data.title}</h5>
-                                                            <p className="font-weight-300 font-10">{data.resumen}</p>
+															<h4 className="dlab-tilte">{data.title}</h4>
+                                                             <h6 className="box-title m-tb0 max-w800 m-auto">{data.resumen}</h6>
 														</div>
 													</div>
 												</div>
@@ -241,7 +241,11 @@ class ServicesDetails extends Component {
                                     <div className="col-lg-12">
                                         <div className="section-head text-black text-center">
                                             <h2 className="box-title m-tb0">Auditoria y asesoría en SG SST<span className="bg-primary"></span></h2>
-                                            <p className="font-weight-300 font-18">La consultoría y asesoría en Seguridad y salud en el trabajo (SG-SST) sirve de apoyo para cumplir con los requerimientos legales del decreto 1072 del 2015 y la resolución 0312 de 2019.
+                                            <p className="font-weight-300 font-18">Brindamos a todas las empresas el servicio de asesoría, consultoría, implementación, auditoría y
+continuidad del Sistema de Gestión en Seguridad y Salud en el Trabajo según el Decreto 1072 del
+2015 y Resolución 0312 del 2019. Ejecutando diseño y desarrollo donde creamos estrategias de
+gestión en prevención de riesgos para responder y proteger a los trabajadores, utilizando
+herramientas para la orientación empresarial en Colombia.
                                             </p>
                                         </div>
                                         
@@ -255,7 +259,7 @@ class ServicesDetails extends Component {
                     </div>
                     {/* <!-- contact area END --> */}
                 </div>
-
+                <ThemeButton />
                 <Footer />
             </>
         )

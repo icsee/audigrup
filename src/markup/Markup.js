@@ -170,9 +170,11 @@ class Markup extends Component{
                         <Route path='/short-testimonial' exact component={ShortTestimonial} />
                         <Route path='/short-form' exact component={ShortForm} />
                         <Route path='/short-accordions' exact component={ShortAccordions} />	
+                        
                         <Redirect to="/" />					
 					</Switch>
-                   
+          <ScrollToTop />
+			
                    </TransitionGroup>
                 </div>
 				

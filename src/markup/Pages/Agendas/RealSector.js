@@ -43,6 +43,7 @@ class RealSector extends React.Component {
             titleModal: 'Cargando...',
             bodyModal: null,
             enableCloseButton: false,
+            backGroundModal:'bg-dark'
         })
 
         fetch(`${API.REAL_SECTOR}`)
@@ -134,7 +135,8 @@ class RealSector extends React.Component {
                     show={showModal}
                     titleModal={titleModal}
                     bodyModal={bodyModal}
-                    enableCloseButton={enableCloseButton} />
+                    enableCloseButton={enableCloseButton}
+                    backGroundModal={'bg-dark'} />
 
 
                 <div className="section-ful our-about-info content-inner-1 " style={{ backgroundPosition: "center", backgroundRepeat: "no-repeat" }}>

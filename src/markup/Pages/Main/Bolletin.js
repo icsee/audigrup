@@ -43,7 +43,7 @@ class Bolletin extends React.Component {
             titleModal: 'Cargando...',
             bodyModal: null,
             enableCloseButton: false,
-            backGroundModal:'bg-warning'
+            backGroundModal:'bg-dark'
         })
 
         fetch(`${API.BOLLETINS}`)
@@ -76,8 +76,8 @@ class Bolletin extends React.Component {
                     <div className="container" >
 
                         <div className="col-md-12 text-center section-head">
-                            <h2 className="font-weight-700 m-b0">Boletines año {new Date().getFullYear()}</h2>
-                            <p className="m-b0">Review boletines</p>
+                            <h2 className="font-weight-700 m-b0">Indicadores y Actualidad año {new Date().getFullYear()}</h2>
+                           
                         </div>
 
                         {typeof(bolletinList.length) === 'undefined' &&(

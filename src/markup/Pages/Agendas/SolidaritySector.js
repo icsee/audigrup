@@ -43,6 +43,7 @@ class SolidaritySector extends React.Component {
             titleModal: 'Cargando...',
             bodyModal: null,
             enableCloseButton: false,
+            backGroundModal:'bg-dark'
 
         })
 
@@ -90,7 +91,7 @@ class SolidaritySector extends React.Component {
             titleModal: 'Descargando...',
             bodyModal: null,
             enableCloseButton: false,
-            backGroundModal: 'bg-warning'
+            backGroundModal: 'bg-dark'
         })
 
         fetch(
