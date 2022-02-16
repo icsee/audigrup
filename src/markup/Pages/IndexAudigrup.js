@@ -56,6 +56,7 @@ import logo17 from './../../images/logoclientes/Imagen17.png';
 import dian from './../../images/logoclientes/dian.png';
 import shd from './../../images/logoclientes/shd.jpg';
 import supersociedades from './../../images/logoclientes/supersociedades.png';
+import supersolidaria from './../../images/logoclientes/supersolidaria.png';
 
 const dlabBox=[
 	{icon: <i className="flaticon-search" />, title:'Revisoría Fiscal', image: revisoriafiscal, resumen:'Órgano de fiscalización de las empresas, que tiene como finalidad verificar el cumplimiento de normas internas y externas, y dictaminar los estados financiero.            ' },
@@ -245,7 +246,8 @@ class IndexAudigrup extends Component {
                                
                                 <a target="_blank" href="https://www.dian.gov.co/"><img src={dian} alt="" /></a>  
                                 <a target="_blank" href="https://www.shd.gov.co/shd/"><img src={shd} alt="" /></a>
-                                <a target="_blank" href="https://supersociedades.gov.co/SitePages/Inicio.aspx"><img src={supersociedades} alt="" /></a>          
+                                <a target="_blank" href="https://supersociedades.gov.co/SitePages/Inicio.aspx"><img src={supersociedades} alt="" /></a>
+                                <a target="_blank" href="http://www.supersolidaria.gov.co/"><img src={supersolidaria} alt="" /></a>          
                             </div>
                         </div>
                         

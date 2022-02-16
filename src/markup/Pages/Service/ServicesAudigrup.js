@@ -8,7 +8,7 @@ import TestimonialCarousel from '../../Element/TestimonialCarousel';
 import FormStyle from '../../Element/FormStyle';
 import ThemeButton from '../../Element/ThemeButton/ThemeButtonAudigrup';
 //Images
-import bnr1 from './../../../images/banner/bnr4.jpg';
+import bnr1 from './../../../images/our-work/workaudigrup.jpg';
 import bgmap from './../../../images/background/bg-map.jpg';
 import bg1 from './../../../images/background/bg1.jpg';
 import tributaria from './../../../images/audigrup/tributaria.jpg';
