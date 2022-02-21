@@ -171,7 +171,7 @@ class SolidaritySector extends React.Component {
                                             <Button variant="dark" value={solidaritySector.idSolidaritySector} onClick={this.handleClick.bind(this, solidaritySector)}>
                                                 <FaFileDownload />  Descargar
                                             </Button>
-                                            <p className="font-16">{solidaritySector.summary}</p>
+                                            {/* <p className="font-16">{solidaritySector.summary}</p> */}
                                         </div>
                                     </div>
                                 </div>
