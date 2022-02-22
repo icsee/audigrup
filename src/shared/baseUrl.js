@@ -1,5 +1,5 @@
 // API Backend
-export const baseUrl = 'https://audigrup.icsee.com.co/audigrup/public/';
+export const baseUrl = 'https://api-audigrup.audigrup.com.co/audigrup/public/';
 //export const DOMAIN='http://localhost:8000/';
 
 export const API ={
