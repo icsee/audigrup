@@ -168,7 +168,7 @@ class RealSector extends React.Component {
                                             <Button variant="dark" value={realSector.idRealSector} onClick={this.handleClick.bind(this, realSector)}>
                                                 <FaFileDownload />  Descargar
                                             </Button>
-                                            <p className="font-16">{realSector.summary}</p>
+                                            {/* <p className="font-16">{realSector.summary}</p> */}
                                         </div>
                                     </div>
                                 </div>
