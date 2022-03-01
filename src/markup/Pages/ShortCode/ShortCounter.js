@@ -20,7 +20,7 @@ const counterBlog = [
 	{icon: <i className="ti-mobile m-r10" />, num: '200', title: 'Apps Delivered',},	
 ];
 const counterBlog2 = [
-	{ num: '5040',  title: 'Dias de experiencia', texto:"Sector real y solidario"},	
+	{ num: '5040',  title: 'Días de experiencia', texto:"Sector real y solidario"},	
 	{ num: '54',  title: 'Clientes felices', texto:"Asesorando y gestionando"},		
 ];
 const counterBlog3 = [

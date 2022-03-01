@@ -5,7 +5,7 @@ import Counter from './Counter';
 import bg1 from './../../images/background/meet.jpg';
 
 const iconBlog =[
-	{icon: <i className="flaticon-management" />,	   title: 'Lideramos con ejemplo', texto:"Estimulamos, aporta ejemplo, trabaja codo con codo con sus colaboradores, somos coherente con lo que pensamos, con lo que se dice y con lo que se hace."},
+	{icon: <i className="flaticon-management" />,	   title: 'Lideramos con ejemplo', texto:"Incentivamos, aporta ejemplo, trabaja codo con codo con sus colaboradores, somos coherentes con lo que pensamos, con lo que se dice y con lo que se hace."},
 	{icon: <i className="flaticon-team" />, title: 'Trabajo en equipo',texto:"Es la manera organizada de trabajar con el fin de alcanzar metas comunes. "},
 	{icon: <i className="flaticon-leadership" />, title: 'Respeto',texto:"Es valor que permite a la firma, aceptar, apreciar y valorar las cualidades del grupo de trabajo, clientes y sus derechos."},
 	{icon: <i className="flaticon-search" />, title: 'Investigación consulta e indagación',texto:"Proceso dinámico que consiste en estar abiertos a experimentar y llegar a conocer el mundo."},

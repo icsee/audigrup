@@ -61,13 +61,13 @@ import supersolidaria from './../../images/logoclientes/supersolidaria.png';
 
 const dlabBox=[
 	{icon: <i className="flaticon-search" />, title:'Revisoría Fiscal', image: revisoriafiscal, resumen:'Órgano de fiscalización de las empresas, que tiene como finalidad verificar el cumplimiento de normas internas y externas, y dictaminar los estados financiero.            ' },
-    {icon: <i className="flaticon-operation" />, title:'Consultoría en calidad y procesos', image: quality, resumen:'Implementamos programas orientados al perfeccionamiento de los procesos, de modo de asegurar la óptima calidad de los productos y servicios ofrecidos.            '},
+    {icon: <i className="flaticon-operation" />, title:'Consultoría en calidad y procesos', image: quality, resumen:'Implementamos programas orientados al perfeccionamiento de los procesos, asegurando la óptima calidad de los productos y servicios ofrecidos.            '},
 	{icon: <i className="flaticon-bar-chart" />, title:'Asesoría Gerencial', image: advisor, resumen:'Orientada a gerentes de empresas, gobiernos locales, presidentes de empresas y directivos corporativos, en sus procesos de planeación y toma de decisiones.                   ' },
-	{icon: <i className="flaticon-accounting" />, title:'Gestión opertativa del área contable, outsourcing contable', image: gestioncontable, resumen:'Optimización de los procesos contables y financieros. Calidad en los reportes emitidos. Oportunidad en la entrega de reportes.'},
+	{icon: <i className="flaticon-accounting" />, title:'Gestión operativa del área contable, outsourcing contable', image: gestioncontable, resumen:'Optimización de los procesos contables y financieros. Calidad en los reportes emitidos. Oportunidad en la entrega de reportes.'},
     {icon: <i className="flaticon-money" />, title:'Asesoría tributaria', image: work2,  resumen:'Comprende la implementación de controles y procedimientos necesarios para la adecuada aplicación de las normas tributarias.       ' },
     {icon: <i className="flaticon-maze" />, title:'Auditoría interna y externa', image: audiexterinter, resumen:'Objetivo analizar y mejorar los controles y el desempeño y se pretende expresar una opinión sobre el estado financiero.                                                      '},
-    {icon: <i className="flaticon-organization" />, title:'Auditoria en salud', image: salud, resumen:'Proceso de evaluación sistemática de la calidad y la gestión de recursos en la atención en salud.                                                                             '},
-    {icon: <i className="flaticon-workers" />, title:'Auditoria y asesoría en SG SST', image: safety, resumen:'Diagnóstico Y Plan Anual De Trabajo SGSST A La Medida De Su Negocio.                                                                                                   '},
+    {icon: <i className="flaticon-organization" />, title:'Auditoría en salud', image: salud, resumen:'Proceso de evaluación sistemática de la calidad y la gestión de recursos en la atención en salud.                                                                             '},
+    {icon: <i className="flaticon-workers" />, title:'Auditoría y asesoría en SG SST', image: safety, resumen:'Diagnóstico Y Plan Anual De Trabajo SGSST A La Medida De Su Negocio.                                                                                                   '},
 ];
 
 const gridBlog = [
@@ -77,9 +77,9 @@ const gridBlog = [
 ];
 
 const teamBlog = [
-	{image: mauricio, cargo:"Socio Gerente de Auditoria",nombre:"CP DR. HENRY MAURICIO PUENTES CRUZ", resumen:"Amplia experiencia y conocimiento en Revisoría Fiscal y en las áreas de Contabilidad, Auditoria Interna - Externa y Consultoría, Análisis Financiero y evaluación de cuentas, coordinación del trabajo y manejo de relaciones con la alta gerencia de los usuarios. Diplomado en Normas Internaciones de Auditoria NIA Cámara de Comercio de Bogotá 2014, IFRS Normas de información Financiara 2012 Price Wáter House Couper 2012 Gestión Tributaria (Impuestos Nacionales y Distritales) y Gestión de Riesgo de Lavado de Activos y Financiación del Terrorismo (SARLAFT) y Sistema Integrado de Administración de Riesgo (SIAR). Universidad EAN. "  },
-    {image: javier, cargo:"SOCIO – Gerente General", nombre:"CP DR JAVIER RODRIGO JIMÉNEZ AMAYA", resumen:"Con amplia experiencia y conocimiento en las áreas de Contabilidad, Auditoría y Consultoría, coordinación del trabajo y manejo de relaciones con la alta gerencia de los usuarios,  Administración y capacitación técnica de talento humano a cargo, comercialización del portafolio de servicios. Diplomado en Normas Internaciones de Auditoria NIA Cámara de Comercio de Bogotá 2014, IFRS Normas de información Financiara 2012 Price Wáter House Couper 2012 Gestión Tributaria (Impuestos Nacionales y Distritales) y Gestión de Riesgo de Lavado de Activos y Financiación del Terrorismo (SARLAFT) y Sistema Integrado de Administración de Riesgo (SIAR). Universidad EAN." }
-    ,{image: wilman, cargo: "Coordinador de Auditoria", nombre:"CP DR. WILMAN ARLEY MUÑOZ BUSTOS", resumen:"Profesional en contaduría pública con una amplia experiencia y conocimiento en las áreas de Contabilidad y evaluación de cuentas, coordinación del trabajo y manejo de excelentes relaciones interpersonales. Diplomado Normas Internacionales de Información Financiera NIIF. Universidad Externado de Colombia 2013. Normas Internacionales de Auditoria y Aseguramiento. Cámara de Comercio de Bogotá 2014.Gestión de Riesgo de Lavado de Activos y Financiación del Terrorismo (SARLAFT) y Sistema Integrado de Administración de Riesgo (SIAR). Universidad EAN."}, 
+	{image: mauricio, cargo:"Socio Gerente de Auditoría",nombre:"CP DR. HENRY MAURICIO PUENTES CRUZ", resumen:"Amplia experiencia y conocimiento en Revisoría Fiscal y en las áreas de Contabilidad, Auditoría Interna - Externa y Consultoría, Análisis Financiero y evaluación de cuentas, coordinación del trabajo y manejo de relaciones con la alta gerencia de los usuarios. Diplomado en Normas Internaciones de Auditoría NIA Cámara de Comercio de Bogotá 2014, IFRS Normas de información Financiara 2012 Price Wáter House Couper 2012 Gestión Tributaria (Impuestos Nacionales y Distritales) y Gestión de Riesgo de Lavado de Activos y Financiación del Terrorismo (SARLAFT) y Sistema Integrado de Administración de Riesgo (SIAR). Universidad EAN. "  },
+    {image: javier, cargo:"SOCIO – Gerente General", nombre:"CP DR JAVIER RODRIGO JIMÉNEZ AMAYA", resumen:"Con amplia experiencia y conocimiento en las áreas de Contabilidad, Auditoría y Consultoría, coordinación del trabajo y manejo de relaciones con la alta gerencia de los usuarios,  Administración y capacitación técnica de talento humano a cargo, comercialización del portafolio de servicios. Diplomado en Normas Internaciones de Auditoría NIA Cámara de Comercio de Bogotá 2014, IFRS Normas de información Financiara 2012 Price Wáter House Couper 2012 Gestión Tributaria (Impuestos Nacionales y Distritales) y Gestión de Riesgo de Lavado de Activos y Financiación del Terrorismo (SARLAFT) y Sistema Integrado de Administración de Riesgo (SIAR). Universidad EAN." }
+    ,{image: wilman, cargo: "Coordinador de Auditoría", nombre:"CP DR. WILMAN ARLEY MUÑOZ BUSTOS", resumen:"Profesional en contaduría pública con una amplia experiencia y conocimiento en las áreas de Contabilidad y evaluación de cuentas, coordinación del trabajo y manejo de excelentes relaciones interpersonales. Diplomado Normas Internacionales de Información Financiera NIIF. Universidad Externado de Colombia 2013. Normas Internacionales de Auditoria y Aseguramiento. Cámara de Comercio de Bogotá 2014.Gestión de Riesgo de Lavado de Activos y Financiación del Terrorismo (SARLAFT) y Sistema Integrado de Administración de Riesgo (SIAR). Universidad EAN."}, 
 ];
 
 const logoBlog = [
@@ -157,7 +157,7 @@ class IndexAudigrup extends Component {
                                     <div className="col-lg-7 col-md-8">
                                         <div className="abuot-box row" >
                                             <div className="col-lg-4">
-                                                <h2 className="box-title m-tb0">Por que elegirnos como una firma asesora y auditora?.<span className="bg-primary"></span></h2>
+                                                <h2 className="box-title m-tb0">¿Por qué elegirnos como una firma asesora y auditora?.<span className="bg-primary"></span></h2>
                                                 <h4 className="text-gray-dark">Nosotros te lo explicamos.</h4>
                                             </div>
                                             <div className="col-lg-8">
@@ -166,12 +166,12 @@ class IndexAudigrup extends Component {
                                                  le corresponde dictaminar los estados financieros y revisar y evaluar sistemáticamente sus componentes y elementos que integran el control interno, en forma oportuna e independiente en los términos que le señala la ley, 
                                                  los estatutos y los pronunciamientos profesionales</p>
                                                  <h4 className="text-gray-dark">¿Qué factores debes tomar en cuenta a la hora de contratar una revisoría fiscal?</h4>
-                                                 <p class=" m-b15">-Liderazgo y responsabilidad por la calidad dentro de la firma</p>
-                                                 <p class=" m-b15">-Monitorear las actividades que realizan los consultores de la firma</p>
-                                                 <p class=" m-b15"> -Deben tener definido un programa de trabajo y evidencia de actividades previamente ejecutadas</p>
-                                                 <p class=" m-b15"> -Deben contar con personal calificado que pueda desarrollar las actividades delegadas dentro de los encargos de auditoría </p>
-                                                 <p class=" m-b15"> -La firma debe diseñar un código de ética aplicable a todo su equipo de trabajo </p>
-                                                 <p class=" m-b15"> -Es necesario que sepan identificar riesgos y controles para atender los casos con comportamiento ético </p>
+                                                 <p class=" m-b15">-Liderazgo y responsabilidad por la calidad dentro de la firma.</p>
+                                                 <p class=" m-b15">-Monitorear las actividades que realizan los consultores de la firma.</p>
+                                                 <p class=" m-b15"> -Deben tener definido un programa de trabajo y evidencia de actividades previamente ejecutadas.</p>
+                                                 <p class=" m-b15"> -Deben contar con personal calificado que pueda desarrollar las actividades delegadas dentro de los encargos de auditoría. </p>
+                                                 <p class=" m-b15"> -La firma debe diseñar un código de ética aplicable a todo su equipo de trabajo. </p>
+                                                 <p class=" m-b15"> -Es necesario que sepan identificar riesgos y controles para atender los casos con comportamiento ético. </p>
                                             </div>
                                         </div>
                                     </div>

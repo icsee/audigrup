@@ -20,7 +20,7 @@ const iconWraper=[
 	
 	{icon: <i className="flaticon-pen" />, title:'Financiera', resumen:'Determinar si los estados financieros de la Entidad, correspondientes al año terminado se presentan de acuerdo con Normas de Contabilidad Generalmente aceptadas en Colombia y si reflejan razonablemente la situación financiera.'},
 	{icon: <i className="flaticon-accounting" />, title:'Control Interno', resumen:'Evaluar el sistema de control interno de la  Organización, para conceptuar sobre el adecuado uso del mismo, identificar sus debilidades y presentar recomendaciones para el fortalecimiento de éste. '},
-	{icon: <i className="flaticon-management" />, title:'Cumplimiento y Gestión', resumen:'Verificar el cumplimiento de las disposiciones adoptadas por los órganos de Admón. Lo mismo que las normas legales y reglamentaciones relacionadas con sus operaciones. Evaluar y conceptuar sobre la gestión realizada por los órganos administrativos.'},
+	{icon: <i className="flaticon-management" />, title:'Cumplimiento y Gestión', resumen:'Verificar el cumplimiento de las disposiciones adoptadas por los órganos de Administración. Lo mismo que las normas legales y reglamentaciones relacionadas con sus operaciones. Evaluar y conceptuar sobre la gestión realizada por los órganos administrativos.'},
 	{icon: <i className="flaticon-devices" />, title:'Sistemas', resumen:'Lo importante de la Auditoria Integral es evaluar las aplicaciones existentes, el hardware utilizado y en general la evaluación del área de sistemas'},
 
 ];

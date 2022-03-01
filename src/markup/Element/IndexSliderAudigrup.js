@@ -102,7 +102,7 @@ class Index3Slider extends Component{
 							<div className="max-w700 text-white ">
 								
 								<h1 className="dz-title">Somos reconocidos <br/> </h1>
-								<h1 className="sub-title">como la mejor opción en calidad,servicio y respaldo integral. </h1>
+								<h1 className="sub-title">como la mejor opción en calidad servicio y respaldo integral. </h1>
 							</div>
 						</div>
 					</div>
