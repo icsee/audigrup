@@ -25,8 +25,10 @@ class Footer1 extends Component {
                                     <div className="widget widget_getintuch">
                                         <h5 className="m-b30 text-white ">Contactanos</h5>
                                         <ul>
-                                            <li><i className="ti-location-pin"></i><strong>Dirección</strong> Cr. 10 # 23-06 OF 401 BOGOTÁ-COLOMBIA </li>
-                                            <li><i className="ti-mobile"></i><strong>Teléfono</strong>3112411218 - 3124311678</li>
+                                            <li><i className="ti-location-pin"></i><strong>Dirección</strong> Av. Cra. 68 75 A 50 OF 310 Ofiespacios Centro Empresarial Metropolis  Bogotá-Colombia </li>
+                                            <li><i className="ti-mobile"></i><strong>Teléfono</strong>3112411218 - 3124311678 - 601 347 21 94 </li>
+
+                                                                                                                                                                       
                                             <li><i className="ti-email"></i><strong>email</strong>audigrup@audigrup.com.co</li>
                                         </ul>
                                     </div>
