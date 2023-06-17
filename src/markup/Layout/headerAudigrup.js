@@ -49,7 +49,7 @@ class Header2 extends Component {
                                     <ul>
                                         <li><i className="flaticon-phone-call m-r5"></i> 3112411218</li>
                                         <li><i className="flaticon-phone-call m-r5"></i> 3124311678</li>
-                                        <li><i className="ti-location-pin m-r5"></i> Cr 10 # 23-06 of 401 Bogotá Colombia</li>
+                                        <li><i className="ti-location-pin m-r5"></i> Av. Cra. 68 75 A 50 OF 310 Ofiespacios Centro Empresarial Metropolis  Bogotá-Colombia</li>
                                     </ul>
                                 </div>
                                 <div className="dlab-topbar-right">
